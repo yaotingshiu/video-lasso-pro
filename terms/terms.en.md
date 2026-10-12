@@ -16,8 +16,9 @@ Welcome to **Video Lasso** ("the Tool"). The Tool is a browser extension develop
 | --- | --- | --- |
 | Detect page videos, extract subtitles | Included | Included |
 | Download quality | Up to 480p | Unlimited |
-| Premium download credits | 3 on first use, then 1 more every 1.5 hours (needed for above 480p, MOV, M4A) | Unlimited |
+| Premium download credits | 2 on first use, then 1 every 2 hours (no stacking) (needed for above 480p, MOV, M4A) | Unlimited |
 | Stream download (live) | Uses a premium download credit | Unlimited |
+| Big platforms (YouTube, Bilibili, Twitch, Douyin, Facebook…) | Premium download credits only | Unlimited |
 | Output formats | MP4 | MP4, MOV, M4A (audio only), original WebM, etc. |
 | Simultaneous downloads | 1 at a time | Unlimited |
 | Download speed | Videos up to 10 minutes: not throttled. Videos over 10 minutes: capped at 256 KB/s | Not throttled |
