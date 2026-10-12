@@ -46,12 +46,12 @@ document.documentElement.setAttribute('data-theme',t)})()</script>
 
   .card { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 22px; margin-top: 22px; animation: rise .8s .1s var(--ease) both; }
   .lic { display: flex; gap: 14px; align-items: flex-start; }
-  .lic .ic { flex: none; width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; background: rgba(245,196,81,.12); color: var(--gold); font-weight: 900; }
+  .lic .ic { flex: none; width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; background: rgba(245,196,81,.12); color: var(--gold-t); font-weight: 900; }
   .lic.ok .ic { background: rgba(52,211,153,.12); color: var(--ok); }
   .lic.bad .ic { background: rgba(251,113,133,.12); color: var(--bad); }
   .lic b { display: block; font-size: 15px; margin-bottom: 2px; }
   .lic p { color: var(--sub); font-size: 13.5px; }
-  .lic a { color: var(--gold); }
+  .lic a { color: var(--gold-t); }
   .spin { width: 16px; height: 16px; border-radius: 50%; border: 2px solid currentColor; border-top-color: transparent; animation: r .8s linear infinite; }
   @keyframes r { to { transform: rotate(360deg); } }
 
@@ -91,13 +91,12 @@ document.documentElement.setAttribute('data-theme',t)})()</script>
   @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
 
   /* ---------- light / dark ---------- */
-  :root { --fg: 255,255,255; --text2: #d6d8dd; color-scheme: dark; }
+  :root { --fg: 255,255,255; --text2: #d6d8dd; --gold-t: #f5c451; --silver-t: #d7dce4; color-scheme: dark; }
   :root[data-theme="light"] { --fg: 20,24,32; color-scheme: light;
     --bg: #f4f5f8; --card: #ffffff; --card2: #eceef3; --line: rgba(20,24,32,.10); --line2: rgba(20,24,32,.20);
     --text: #14171c; --text2: #3a404b; --sub: #5b6371; --green: #0a72e0; --green2: #2b88ee;
-    --gold: #b97d00; --gold2: #9a6600; --silver: #8b94a3; --silver2: #6f7888; }
-  :root[data-theme="light"] .plan.silver .avg, :root[data-theme="light"] .silver .avg { color: #5d6675; }
-  .theme-btn { flex: none; width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--line); background: var(--card); color: var(--sub);
+    --gold-t: #a56c00; --silver-t: #5d6675; }
+    .theme-btn { flex: none; width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--line); background: var(--card); color: var(--sub);
     display: grid; place-items: center; cursor: pointer; transition: color .2s, transform .35s var(--spring), border-color .2s; }
   .theme-btn:hover { color: var(--text); border-color: var(--line2); transform: rotate(-12deg) scale(1.06); }
   .theme-btn svg { width: 17px; height: 17px; }

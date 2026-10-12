@@ -42,21 +42,20 @@ document.documentElement.setAttribute('data-theme',t)})()</script>
   article ol, article ul { padding-left: 1.4em; color: var(--text2); }
   article li { margin: 6px 0; }
   article strong { color: var(--text); }
-  article a { color: var(--gold); }
+  article a { color: var(--gold-t); }
   .back { display: inline-flex; gap: 6px; color: var(--sub); text-decoration: none; font-weight: 700; font-size: 14px; margin-top: 6px; }
   .back:hover { color: var(--text); }
-  footer a { color: var(--sub); text-decoration: none; } footer a:hover { color: var(--gold); }
+  footer a { color: var(--sub); text-decoration: none; } footer a:hover { color: var(--gold-t); }
   footer { text-align: center; color: var(--sub); font-size: 12px; padding: 0 0 40px; }
   @media (max-width: 640px) { article { padding: 26px 20px; } }
 
   /* ---------- light / dark ---------- */
-  :root { --fg: 255,255,255; --text2: #d6d8dd; color-scheme: dark; }
+  :root { --fg: 255,255,255; --text2: #d6d8dd; --gold-t: #f5c451; --silver-t: #d7dce4; color-scheme: dark; }
   :root[data-theme="light"] { --fg: 20,24,32; color-scheme: light;
     --bg: #f4f5f8; --card: #ffffff; --card2: #eceef3; --line: rgba(20,24,32,.10); --line2: rgba(20,24,32,.20);
     --text: #14171c; --text2: #3a404b; --sub: #5b6371; --green: #0a72e0; --green2: #2b88ee;
-    --gold: #b97d00; --gold2: #9a6600; --silver: #8b94a3; --silver2: #6f7888; }
-  :root[data-theme="light"] .plan.silver .avg, :root[data-theme="light"] .silver .avg { color: #5d6675; }
-  .theme-btn { flex: none; width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--line); background: var(--card); color: var(--sub);
+    --gold-t: #a56c00; --silver-t: #5d6675; }
+    .theme-btn { flex: none; width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--line); background: var(--card); color: var(--sub);
     display: grid; place-items: center; cursor: pointer; transition: color .2s, transform .35s var(--spring), border-color .2s; }
   .theme-btn:hover { color: var(--text); border-color: var(--line2); transform: rotate(-12deg) scale(1.06); }
   .theme-btn svg { width: 17px; height: 17px; }
