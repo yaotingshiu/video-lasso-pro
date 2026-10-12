@@ -115,7 +115,7 @@ document.documentElement.setAttribute('data-theme',t)})()</script>
     <a class="home" href="./"><svg viewBox="10.5 8 112.5 112.5"> <defs> <clipPath id="ups"><rect x="-20" y="-40" width="180" height="106"/></clipPath> <clipPath id="dns"><rect x="-20" y="62" width="180" height="100"/></clipPath> <mask id="ms" maskUnits="userSpaceOnUse" x="0" y="0" width="128" height="128"><rect width="128" height="128" fill="#fff"/><rect x="28.8" y="38.2" width="9.1" height="6.5" rx="1.5" fill="#000"/><rect x="28.8" y="83.3" width="9.1" height="6.5" rx="1.5" fill="#000"/><rect x="45.8" y="38.2" width="9.1" height="6.5" rx="1.5" fill="#000"/><rect x="45.8" y="83.3" width="9.1" height="6.5" rx="1.5" fill="#000"/><rect x="73.1" y="38.2" width="9.1" height="6.5" rx="1.5" fill="#000"/><rect x="73.1" y="83.3" width="9.1" height="6.5" rx="1.5" fill="#000"/><rect x="90.1" y="38.2" width="9.1" height="6.5" rx="1.5" fill="#000"/><rect x="90.1" y="83.3" width="9.1" height="6.5" rx="1.5" fill="#000"/><path d="M54.9 51.0 L54.9 77.0 L79.6 64 Z" fill="#000" stroke="#000" stroke-width="5.2" stroke-linejoin="round"/></mask> </defs> <g transform="rotate(-24 64 64)"><ellipse cx="64" cy="64" rx="50" ry="31" fill="none" stroke="#F2A900" stroke-width="8" clip-path="url(#ups)"/></g> <g transform="rotate(-8 64 64)"><rect x="21.0" y="33.0" width="86" height="62" rx="10.4" fill="currentColor" mask="url(#ms)"/></g> <g transform="rotate(-24 64 64)"><ellipse cx="64" cy="64" rx="50" ry="31" fill="none" stroke="#FFC83D" stroke-width="8" clip-path="url(#dns)"/><rect x="105" y="56" width="17" height="16" rx="5.5" fill="#FFB000" stroke="#B87400" stroke-width="2"/></g> <path d="M109 44 C122 52 119 72 104 80" fill="none" stroke="#FFC83D" stroke-width="7" stroke-linecap="round"/> </svg><b>Video Lasso</b></a>
     <span class="sp"></span>
     <button class="theme-btn" type="button" title="Light / Dark · 淺色 / 深色" aria-label="Theme"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/></svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z"/></svg></button>
-    <div class="lang" role="group" aria-label="Language"><span class="pill"></span><button data-lang="zh">繁中</button><button data-lang="cn">简中</button><button data-lang="en">EN</button></div>
+    <div class="lang" role="group" aria-label="Language"><span class="pill"></span><button data-lang="zh">繁中</button><button data-lang="cn">简中</button><button data-lang="en">EN</button><button data-lang="ja">日本語</button></div>
   </div>
 
   <div class="hero">
@@ -130,7 +130,7 @@ document.documentElement.setAttribute('data-theme',t)})()</script>
   </div>
 
   <div class="card back">
-    <h2 data-t="back_t">还想再抓视频？</h2>
+    <h2 data-t="back_t">還想再抓影片？</h2>
     <p data-t="back_p">重新安裝後就能繼續使用，你的 Pro 授權碼也能再次啟用。</p>
     <a class="store" id="storeBtn" href="#" target="_blank" rel="noopener"><span id="storeIco"></span><span id="storeTxt"></span><span class="arrow">→</span></a>
     <div class="others" id="others"></div>
@@ -177,6 +177,15 @@ document.documentElement.setAttribute('data-theme',t)})()</script>
       fb_t: 'Mind telling us why you left?', fb_p: 'One line is plenty. We read every email, and it helps us make the tool better.', fb_btn: 'Email us',
       disc: 'This software is for lawful use only. By downloading or using it you agree that any legal liability or damage arising from its use is borne solely by you, and the developer accepts no legal or compensatory responsibility.' }
   };
+  TX.ja = { store: '{0} ストアで再インストール', soon: '{0} 版は近日公開', other: '他のブラウザ：', soon_s: '近日公開',
+      lic_run_t: 'この端末の Pro ライセンスをサインアウトしています…', lic_run_p: '枠を空けると、このキーを別のブラウザでも使えるようになります。',
+      lic_ok_t: 'この端末の Pro ライセンスをサインアウトしました', lic_ok_p: '枠が空きました。再インストールするか、別のブラウザで同じキーを入力すれば、引き続き使えます。',
+      lic_bad_t: 'この端末を自動でサインアウトできませんでした', lic_bad_p: '<a href="https://app.lemonsqueezy.com/my-orders" target="_blank" rel="noopener">Lemon Squeezy の注文履歴（My Orders）</a>で、この端末を手動で無効にして枠を空けてください。',
+      mail_subject: 'Video Lasso を削除した理由',
+      t: 'ご利用ありがとうございました', lead: '拡張機能を削除しました。保存したい動画を無事に残せていたら幸いです。気が変わったら、いつでもお帰りください。閲覧した内容を、当方がアップロードしたことは一度もありません。',
+      back_t: 'また動画を保存したくなったら', back_p: '再インストールすれば、すぐに続きから使えます。Pro のライセンスキーも再び有効にできます。',
+      fb_t: '削除した理由を教えていただけますか？', fb_p: '一言で大丈夫です。すべてのメールに目を通し、ツールの改善に役立てます。', fb_btn: 'メールで送る',
+      disc: '本ソフトウェアは適法な目的でのみご利用いただけます。ダウンロードまたは利用することで、利用に起因する一切の法的責任および損害を利用者ご自身が負うことに同意したものとみなされ、開発者は法的責任も賠償責任も負いません。' };
   const ZH = {}; document.querySelectorAll('[data-t]').forEach((el) => { ZH[el.dataset.t] = el.textContent; });
   let LANG = 'zh';
   const T = (k, a) => { const d = TX[LANG] || TX.zh; let s = d[k] != null ? d[k] : (TX.zh[k] != null ? TX.zh[k] : ZH[k] || ''); if (a != null) s = s.split('{0}').join(a); return s; };
@@ -246,7 +255,7 @@ document.documentElement.setAttribute('data-theme',t)})()</script>
   function setLang(l, instant) {
     LANG = l;
     document.querySelectorAll('[data-t]').forEach((el) => { el.textContent = T(el.dataset.t); });
-    document.documentElement.lang = l === 'en' ? 'en' : (l === 'cn' ? 'zh-CN' : 'zh-TW');
+    document.documentElement.lang = ({ en: 'en', cn: 'zh-CN', ja: 'ja' })[l] || 'zh-TW';
     document.querySelectorAll('.lang button').forEach((b) => b.classList.toggle('on', b.dataset.lang === l));
     document.getElementById('fbBtn').href = 'mailto:speed132454@gmail.com?subject=' + encodeURIComponent(T('mail_subject'));
     movePill(instant); renderStore(); renderLic();
@@ -255,8 +264,8 @@ document.documentElement.setAttribute('data-theme',t)})()</script>
   document.querySelectorAll('.lang button').forEach((b) => b.onclick = () => setLang(b.dataset.lang));
   let start = new URLSearchParams(location.search).get('lang');
   if (!start) { try { start = localStorage.getItem('lang'); } catch (e) {} }
-  if (!start) { const nav = ((navigator.languages && navigator.languages[0]) || navigator.language || 'en').toLowerCase(); start = /^zh/.test(nav) ? (/(cn|sg|hans)/.test(nav) ? 'cn' : 'zh') : 'en'; }
-  setLang(['zh', 'cn', 'en'].includes(start) ? start : 'en', true);
+  if (!start) { const nav = ((navigator.languages && navigator.languages[0]) || navigator.language || 'en').toLowerCase(); start = /^zh/.test(nav) ? (/(cn|sg|hans)/.test(nav) ? 'cn' : 'zh') : /^ja/.test(nav) ? 'ja' : 'en'; }
+  setLang(['zh', 'cn', 'en', 'ja'].includes(start) ? start : 'en', true);
   addEventListener('resize', () => movePill(true));
   if (document.fonts) document.fonts.ready.then(() => movePill(true));
   freeSlot();
