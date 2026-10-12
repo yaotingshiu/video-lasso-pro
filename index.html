@@ -335,7 +335,10 @@ document.documentElement.setAttribute('data-theme',t)})()</script>
   .theme-btn .moon { display: none; }
   :root[data-theme="light"] .theme-btn .sun { display: none; }
   :root[data-theme="light"] .theme-btn .moon { display: block; }
-  body, .card, .plan, article, .lang, .theme-btn { transition: background-color .25s, color .25s, border-color .25s; }
+  /* smooth cross-fade of every colour while the theme switches */
+  html.theme-anim, html.theme-anim *, html.theme-anim *::before, html.theme-anim *::after {
+    transition-property: background-color, color, border-color, fill, stroke, box-shadow, text-shadow !important;
+    transition-duration: .45s !important; transition-timing-function: ease !important; transition-delay: 0s !important; }
 </style>
 </head>
 <body>
@@ -699,11 +702,12 @@ document.documentElement.setAttribute('data-theme',t)})()</script>
   if (document.fonts) document.fonts.ready.then(() => movePill(true));
 </script>
 <script>
-(function(){var r=document.documentElement,mq=matchMedia('(prefers-color-scheme: light)');
+(function(){var r=document.documentElement,mq=matchMedia('(prefers-color-scheme: light)'),tm;
+function set(n){r.classList.add('theme-anim');r.setAttribute('data-theme',n);clearTimeout(tm);tm=setTimeout(function(){r.classList.remove('theme-anim')},600)}
 function saved(){try{var v=localStorage.getItem('theme');return v==='light'||v==='dark'?v:null}catch(e){return null}}
-if(mq.addEventListener)mq.addEventListener('change',function(){if(!saved())r.setAttribute('data-theme',mq.matches?'light':'dark')});
-document.querySelectorAll('.theme-btn').forEach(function(b){b.onclick=function(){var n=r.getAttribute('data-theme')==='light'?'dark':'light';r.setAttribute('data-theme',n);try{localStorage.setItem('theme',n)}catch(e){}}});
-addEventListener('storage',function(e){if(e.key==='theme'&&(e.newValue==='light'||e.newValue==='dark'))r.setAttribute('data-theme',e.newValue)});})();
+if(mq.addEventListener)mq.addEventListener('change',function(){if(!saved())set(mq.matches?'light':'dark')});
+document.querySelectorAll('.theme-btn').forEach(function(b){b.onclick=function(){var n=r.getAttribute('data-theme')==='light'?'dark':'light';set(n);try{localStorage.setItem('theme',n)}catch(e){}}});
+addEventListener('storage',function(e){if(e.key==='theme'&&(e.newValue==='light'||e.newValue==='dark'))set(e.newValue)});})();
 </script>
 </body>
 </html>
