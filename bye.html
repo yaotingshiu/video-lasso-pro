@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Video Lasso</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20128%20128%22%20width%3D%22128%22%20height%3D%22128%22%3E%0A%3Cdefs%3E%0A%3CclipPath%20id%3D%22upfav%22%3E%3Crect%20x%3D%22-20%22%20y%3D%22-40%22%20width%3D%22180%22%20height%3D%22106%22/%3E%3C/clipPath%3E%0A%3CclipPath%20id%3D%22dnfav%22%3E%3Crect%20x%3D%22-20%22%20y%3D%2262%22%20width%3D%22180%22%20height%3D%22100%22/%3E%3C/clipPath%3E%0A%3Cmask%20id%3D%22mfav%22%20maskUnits%3D%22userSpaceOnUse%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22128%22%20height%3D%22128%22%3E%3Crect%20width%3D%22128%22%20height%3D%22128%22%20fill%3D%22%23fff%22/%3E%3Crect%20x%3D%2237%22%20y%3D%2244%22%20width%3D%227%22%20height%3D%225%22%20rx%3D%221.5%22%20fill%3D%22%23000%22/%3E%3Crect%20x%3D%2237%22%20y%3D%2279%22%20width%3D%227%22%20height%3D%225%22%20rx%3D%221.5%22%20fill%3D%22%23000%22/%3E%3Crect%20x%3D%2250%22%20y%3D%2244%22%20width%3D%227%22%20height%3D%225%22%20rx%3D%221.5%22%20fill%3D%22%23000%22/%3E%3Crect%20x%3D%2250%22%20y%3D%2279%22%20width%3D%227%22%20height%3D%225%22%20rx%3D%221.5%22%20fill%3D%22%23000%22/%3E%3Crect%20x%3D%2271%22%20y%3D%2244%22%20width%3D%227%22%20height%3D%225%22%20rx%3D%221.5%22%20fill%3D%22%23000%22/%3E%3Crect%20x%3D%2271%22%20y%3D%2279%22%20width%3D%227%22%20height%3D%225%22%20rx%3D%221.5%22%20fill%3D%22%23000%22/%3E%3Crect%20x%3D%2284%22%20y%3D%2244%22%20width%3D%227%22%20height%3D%225%22%20rx%3D%221.5%22%20fill%3D%22%23000%22/%3E%3Crect%20x%3D%2284%22%20y%3D%2279%22%20width%3D%227%22%20height%3D%225%22%20rx%3D%221.5%22%20fill%3D%22%23000%22/%3E%3Cpath%20d%3D%22M57%2054%20L57%2074%20L76%2064%20Z%22%20fill%3D%22%23000%22%20stroke%3D%22%23000%22%20stroke-width%3D%224%22%20stroke-linejoin%3D%22round%22/%3E%3C/mask%3E%0A%3C/defs%3E%0A%3Cg%20transform%3D%22rotate%28-24%2064%2064%29%22%3E%3Cellipse%20cx%3D%2264%22%20cy%3D%2264%22%20rx%3D%2250%22%20ry%3D%2231%22%20fill%3D%22none%22%20stroke%3D%22%23F2A900%22%20stroke-width%3D%228%22%20clip-path%3D%22url%28%23upfav%29%22/%3E%3C/g%3E%0A%3Cg%20transform%3D%22rotate%28-8%2064%2064%29%22%3E%3Crect%20x%3D%2231%22%20y%3D%2240%22%20width%3D%2266%22%20height%3D%2248%22%20rx%3D%228%22%20fill%3D%22%23000000%22%20mask%3D%22url%28%23mfav%29%22/%3E%3C/g%3E%0A%3Cg%20transform%3D%22rotate%28-24%2064%2064%29%22%3E%3Cellipse%20cx%3D%2264%22%20cy%3D%2264%22%20rx%3D%2250%22%20ry%3D%2231%22%20fill%3D%22none%22%20stroke%3D%22%23FFC83D%22%20stroke-width%3D%228%22%20clip-path%3D%22url%28%23dnfav%29%22/%3E%3Crect%20x%3D%22105%22%20y%3D%2256%22%20width%3D%2217%22%20height%3D%2216%22%20rx%3D%225.5%22%20fill%3D%22%23FFB000%22%20stroke%3D%22%23B87400%22%20stroke-width%3D%222%22/%3E%3C/g%3E%0A%3Cpath%20d%3D%22M109%2044%20C122%2052%20119%2072%20104%2080%22%20fill%3D%22none%22%20stroke%3D%22%23FFC83D%22%20stroke-width%3D%227%22%20stroke-linecap%3D%22round%22/%3E%0A%3C/svg%3E">
+<style>
+  :root { --bg: #0c0d10; --card: #15171c; --card2: #1c1f26; --line: rgba(255,255,255,.08); --line2: rgba(255,255,255,.15);
+    --text: #f3f4f6; --sub: #9aa0aa; --gold: #f5c451; --gold2: #e0a526; --ok: #34d399; --bad: #fb7185;
+    --spring: cubic-bezier(.34,1.56,.64,1); --ease: cubic-bezier(.2,.8,.2,1); }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; min-height: 100vh; }
+  body::before { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: -1;
+    background: radial-gradient(900px 520px at 50% -10%, rgba(245,196,81,.10), transparent 60%), radial-gradient(700px 420px at 100% 100%, rgba(52,211,153,.05), transparent 60%); }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+  .top { display: flex; align-items: center; gap: 10px; padding: 18px 0; }
+  .home { display: inline-flex; align-items: center; gap: 10px; color: inherit; text-decoration: none; }
+  .home svg { width: 34px; height: 34px; }
+  .home b { font-size: 15px; line-height: 1.1; white-space: nowrap; }
+  .home b .for { display: block; font-size: 11px; font-weight: 600; color: var(--sub); margin-top: 1px; }
+  .sp { flex: 1; }
+  .lang { position: relative; display: flex; flex: none; background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 3px; }
+  .lang .pill { position: absolute; top: 3px; bottom: 3px; left: 0; width: 0; border-radius: 16px; background: var(--card2);
+    box-shadow: inset 0 0 0 1px var(--line2); transition: transform .45s var(--spring), width .45s var(--spring); }
+  .lang button { position: relative; z-index: 1; border: 0; background: none; color: var(--sub); font: inherit; font-size: 12px; font-weight: 600; padding: 5px 11px; border-radius: 16px; cursor: pointer; white-space: nowrap; }
+  .lang button.on, .lang button:hover { color: var(--text); }
+
+  .hero { text-align: center; padding: 30px 0 10px; animation: rise .8s var(--ease) both; }
+  .logo { width: 128px; height: 128px; margin: 0 auto 18px; filter: drop-shadow(0 18px 40px rgba(245,196,81,.18)); animation: float 6s ease-in-out infinite; }
+  .logo svg { width: 100%; height: 100%; }
+  h1 { font-size: clamp(26px, 5vw, 38px); letter-spacing: -.5px; line-height: 1.2; }
+  h1 .for { color: var(--sub); font-weight: 600; font-size: .62em; }
+  .lead { color: var(--sub); font-size: 15px; max-width: 560px; margin: 14px auto 0; }
+  @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+  @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 22px; margin-top: 22px; animation: rise .8s .1s var(--ease) both; }
+  .lic { display: flex; gap: 14px; align-items: flex-start; }
+  .lic .ic { flex: none; width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; background: rgba(245,196,81,.12); color: var(--gold); font-weight: 900; }
+  .lic.ok .ic { background: rgba(52,211,153,.12); color: var(--ok); }
+  .lic.bad .ic { background: rgba(251,113,133,.12); color: var(--bad); }
+  .lic b { display: block; font-size: 15px; margin-bottom: 2px; }
+  .lic p { color: var(--sub); font-size: 13.5px; }
+  .lic a { color: var(--gold); }
+  .spin { width: 16px; height: 16px; border-radius: 50%; border: 2px solid currentColor; border-top-color: transparent; animation: r .8s linear infinite; }
+  @keyframes r { to { transform: rotate(360deg); } }
+
+  .back { text-align: center; }
+  .back h2 { font-size: 18px; margin-bottom: 4px; }
+  .back p { color: var(--sub); font-size: 13.5px; margin-bottom: 16px; }
+  .store { display: inline-flex; align-items: center; gap: 10px; padding: 13px 22px; border-radius: 14px; text-decoration: none; font-weight: 800; font-size: 15px;
+    color: #2a1d00; background: linear-gradient(135deg, #ffd36e, var(--gold) 45%, var(--gold2)); box-shadow: 0 10px 28px rgba(245,196,81,.25);
+    transition: transform .3s var(--spring), box-shadow .3s; }
+  .store:hover { transform: translateY(-3px); box-shadow: 0 16px 36px rgba(245,196,81,.35); }
+  .store svg { width: 20px; height: 20px; }
+  .store .arrow { transition: transform .3s var(--spring); }
+  .store:hover .arrow { transform: translateX(4px); }
+  .store.soon { pointer-events: none; color: var(--sub); background: var(--card2); box-shadow: inset 0 0 0 1px var(--line2); }
+  .store.soon .arrow { display: none; }
+  .store img { width: 22px; height: 22px; flex: none; }
+  .store.soon img { filter: grayscale(.4); opacity: .85; }
+  .others { margin-top: 18px; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 8px; font-size: 12.5px; color: var(--sub); }
+  .ob { display: inline-flex; align-items: center; gap: 7px; padding: 7px 13px 7px 9px; border-radius: 30px; text-decoration: none; font-size: 13px; font-weight: 700;
+    color: var(--text); background: var(--card2); border: 1px solid var(--line); transition: transform .3s var(--spring), border-color .2s; }
+  .ob img { width: 18px; height: 18px; }
+  a.ob:hover { transform: translateY(-2px); border-color: var(--line2); }
+  .ob.soon { color: var(--sub); }
+  .ob.soon img { filter: grayscale(.4); opacity: .85; }
+  .ob small { font-size: 10.5px; font-weight: 700; padding: 1px 7px; border-radius: 10px; color: var(--sub); background: rgba(255,255,255,.06); }
+
+  .fb { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; }
+  .fb p { color: var(--sub); font-size: 13.5px; }
+  .fb b { display: block; color: var(--text); font-size: 15px; margin-bottom: 2px; }
+  .ghost { display: inline-flex; padding: 10px 16px; border-radius: 12px; text-decoration: none; color: var(--text); font-weight: 700; font-size: 13.5px;
+    background: var(--card2); box-shadow: inset 0 0 0 1px var(--line2); transition: transform .3s var(--spring); white-space: nowrap; }
+  .ghost:hover { transform: translateY(-2px); }
+
+  footer { text-align: center; color: var(--sub); font-size: 12px; padding: 34px 0 40px; }
+  footer .disc { max-width: 560px; margin: 6px auto 0; opacity: .75; }
+  .hidden { display: none !important; }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a class="home" href="./"><svg viewBox="0 0 128 128"> <defs> <clipPath id="ups"><rect x="-20" y="-40" width="180" height="106"/></clipPath> <clipPath id="dns"><rect x="-20" y="62" width="180" height="100"/></clipPath> <mask id="ms" maskUnits="userSpaceOnUse" x="0" y="0" width="128" height="128"><rect width="128" height="128" fill="#fff"/><rect x="37" y="44" width="7" height="5" rx="1.5" fill="#000"/><rect x="37" y="79" width="7" height="5" rx="1.5" fill="#000"/><rect x="50" y="44" width="7" height="5" rx="1.5" fill="#000"/><rect x="50" y="79" width="7" height="5" rx="1.5" fill="#000"/><rect x="71" y="44" width="7" height="5" rx="1.5" fill="#000"/><rect x="71" y="79" width="7" height="5" rx="1.5" fill="#000"/><rect x="84" y="44" width="7" height="5" rx="1.5" fill="#000"/><rect x="84" y="79" width="7" height="5" rx="1.5" fill="#000"/><path d="M57 54 L57 74 L76 64 Z" fill="#000" stroke="#000" stroke-width="4" stroke-linejoin="round"/></mask> </defs> <g transform="rotate(-24 64 64)"><ellipse cx="64" cy="64" rx="50" ry="31" fill="none" stroke="#F2A900" stroke-width="8" clip-path="url(#ups)"/></g> <g transform="rotate(-8 64 64)"><rect x="31" y="40" width="66" height="48" rx="8" fill="#FFFFFF" mask="url(#ms)"/></g> <g transform="rotate(-24 64 64)"><ellipse cx="64" cy="64" rx="50" ry="31" fill="none" stroke="#FFC83D" stroke-width="8" clip-path="url(#dns)"/><rect x="105" y="56" width="17" height="16" rx="5.5" fill="#FFB000" stroke="#B87400" stroke-width="2"/></g> <path d="M109 44 C122 52 119 72 104 80" fill="none" stroke="#FFC83D" stroke-width="7" stroke-linecap="round"/> </svg><b>Video Lasso</b></a>
+    <span class="sp"></span>
+    <div class="lang" role="group" aria-label="Language"><span class="pill"></span><button data-lang="zh">繁中</button><button data-lang="cn">简中</button><button data-lang="en">EN</button></div>
+  </div>
+
+  <div class="hero">
+    <div class="logo"><svg viewBox="0 0 128 128"> <defs> <clipPath id="upb"><rect x="-20" y="-40" width="180" height="106"/></clipPath> <clipPath id="dnb"><rect x="-20" y="62" width="180" height="100"/></clipPath> <mask id="mb" maskUnits="userSpaceOnUse" x="0" y="0" width="128" height="128"><rect width="128" height="128" fill="#fff"/><rect x="37" y="44" width="7" height="5" rx="1.5" fill="#000"/><rect x="37" y="79" width="7" height="5" rx="1.5" fill="#000"/><rect x="50" y="44" width="7" height="5" rx="1.5" fill="#000"/><rect x="50" y="79" width="7" height="5" rx="1.5" fill="#000"/><rect x="71" y="44" width="7" height="5" rx="1.5" fill="#000"/><rect x="71" y="79" width="7" height="5" rx="1.5" fill="#000"/><rect x="84" y="44" width="7" height="5" rx="1.5" fill="#000"/><rect x="84" y="79" width="7" height="5" rx="1.5" fill="#000"/><path d="M57 54 L57 74 L76 64 Z" fill="#000" stroke="#000" stroke-width="4" stroke-linejoin="round"/></mask> </defs> <g transform="rotate(-24 64 64)"><ellipse cx="64" cy="64" rx="50" ry="31" fill="none" stroke="#F2A900" stroke-width="8" clip-path="url(#upb)"/></g> <g transform="rotate(-8 64 64)"><rect x="31" y="40" width="66" height="48" rx="8" fill="#FFFFFF" mask="url(#mb)"/></g> <g transform="rotate(-24 64 64)"><ellipse cx="64" cy="64" rx="50" ry="31" fill="none" stroke="#FFC83D" stroke-width="8" clip-path="url(#dnb)"/><rect x="105" y="56" width="17" height="16" rx="5.5" fill="#FFB000" stroke="#B87400" stroke-width="2"/></g> <path d="M109 44 C122 52 119 72 104 80" fill="none" stroke="#FFC83D" stroke-width="7" stroke-linecap="round"/> </svg></div>
+    <h1><span data-t="t">感謝你使用</span><br>Video Lasso</h1>
+    <p class="lead" data-t="lead">擴充功能已經移除。希望它曾幫你順利存下想留的影片。如果改變心意，隨時歡迎回來，你瀏覽的內容我們從來沒有上傳過。</p>
+  </div>
+
+  <div class="card lic hidden" id="lic">
+    <div class="ic" id="licIc"><span class="spin"></span></div>
+    <div><b id="licT"></b><p id="licP"></p></div>
+  </div>
+
+  <div class="card back">
+    <h2 data-t="back_t">还想再抓视频？</h2>
+    <p data-t="back_p">重新安裝後就能繼續使用，你的 Pro 授權碼也能再次啟用。</p>
+    <a class="store" id="storeBtn" href="#" target="_blank" rel="noopener"><span id="storeIco"></span><span id="storeTxt"></span><span class="arrow">→</span></a>
+    <div class="others" id="others"></div>
+  </div>
+
+  <div class="card fb">
+    <div><b data-t="fb_t">能告訴我們為什麼移除嗎？</b><p data-t="fb_p">一句話就好，每封信我們都會看，幫助我們把工具做得更好。</p></div>
+    <a class="ghost" id="fbBtn" href="#" data-t="fb_btn">寄信給我們</a>
+  </div>
+
+  <footer>
+    <div style="margin-bottom:6px"><a href="terms.html" style="color:inherit">服務條款 / Terms</a> · <a href="privacy.html" style="color:inherit">隱私權政策 / Privacy</a></div>
+    <div>© <span id="yr"></span> Video Lasso</div>
+    <div class="disc" data-t="disc">本軟體僅供合法用途使用。使用者下載或使用即視為同意：任何因使用本軟體所導致或衍生之法律責任與損害，均由使用者自行承擔，開發者不負任何法律與賠償責任。</div>
+  </footer>
+</div>
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  const STORES = {"chrome": "", "edge": "", "firefox": ""};
+  const LOGO = (b) => `<img src="img/${b}_logo.png" alt="" width="22" height="22">`;
+  const NAMES = { chrome: 'Chrome', edge: 'Edge', firefox: 'Firefox' };
+  const TX = {
+    zh: { store: '到 {0} 商店重新安裝', soon: '{0} 版即將上架', other: '其他瀏覽器：', soon_s: '即將上架',
+      lic_run_t: '正在登出這台裝置的 Pro 授權…', lic_run_p: '釋出名額後，這組授權碼就能在別的瀏覽器使用。',
+      lic_ok_t: '已登出這台裝置的 Pro 授權', lic_ok_p: '名額已經釋出，重新安裝或在其他瀏覽器輸入同一組授權碼即可繼續使用。',
+      lic_bad_t: '沒能自動登出這台裝置', lic_bad_p: '請到 <a href="https://app.lemonsqueezy.com/my-orders" target="_blank" rel="noopener">Lemon Squeezy My Orders</a> 手動停用這台裝置，釋出名額。',
+      mail_subject: '移除 Video Lasso 的原因' },
+    cn: { store: '到 {0} 商店重新安装', soon: '{0} 版即将上线', other: '其他浏览器：', soon_s: '即将上线',
+      lic_run_t: '正在退出这台设备的 Pro 授权…', lic_run_p: '释放名额后，这组授权码就能在别的浏览器使用。',
+      lic_ok_t: '已退出这台设备的 Pro 授权', lic_ok_p: '名额已经释放，重新安装或在其他浏览器输入同一组授权码即可继续使用。',
+      lic_bad_t: '没能自动退出这台设备', lic_bad_p: '请到 <a href="https://app.lemonsqueezy.com/my-orders" target="_blank" rel="noopener">Lemon Squeezy My Orders</a> 手动停用这台设备，释放名额。',
+      mail_subject: '移除 Video Lasso 的原因',
+      t: '感谢你使用', lead: '扩展程序已经移除。希望它曾帮你顺利保存想留的视频。如果改变心意，随时欢迎回来，你浏览的内容我们从来没有上传过。',
+      back_t: '还想再抓视频？', back_p: '重新安装后就能继续使用，你的 Pro 授权码也能再次启用。',
+      fb_t: '能告诉我们为什么移除吗？', fb_p: '一句话就好，每封信我们都会看，帮助我们把工具做得更好。', fb_btn: '写信给我们',
+      disc: '本软件仅供合法用途使用。用户下载或使用即视为同意：任何因使用本软件所导致或衍生之法律责任与损害，均由用户自行承担，开发者不负任何法律与赔偿责任。' },
+    en: { store: 'Reinstall from the {0} store', soon: '{0} version coming soon', other: 'Other browsers: ', soon_s: 'coming soon',
+      lic_run_t: 'Signing this device out of Pro…', lic_run_p: 'This frees the slot so your key can be used in another browser.',
+      lic_ok_t: 'This device has been signed out of Pro', lic_ok_p: 'The slot is free again. Reinstall, or enter the same key in another browser, to keep using Pro.',
+      lic_bad_t: 'We couldn’t sign this device out automatically', lic_bad_p: 'Please deactivate it in <a href="https://app.lemonsqueezy.com/my-orders" target="_blank" rel="noopener">Lemon Squeezy My Orders</a> to free the slot.',
+      mail_subject: 'Why I removed Video Lasso',
+      t: 'Thanks for using', lead: 'The extension has been removed. We hope it helped you save the videos you wanted. Change your mind? You’re always welcome back. What you browse was never uploaded anywhere.',
+      back_t: 'Need to grab more videos?', back_p: 'Reinstall to pick up where you left off; your Pro key can be activated again.',
+      fb_t: 'Mind telling us why you left?', fb_p: 'One line is plenty. We read every email, and it helps us make the tool better.', fb_btn: 'Email us',
+      disc: 'This software is for lawful use only. By downloading or using it you agree that any legal liability or damage arising from its use is borne solely by you, and the developer accepts no legal or compensatory responsibility.' }
+  };
+  const ZH = {}; document.querySelectorAll('[data-t]').forEach((el) => { ZH[el.dataset.t] = el.textContent; });
+  let LANG = 'zh';
+  const T = (k, a) => { const d = TX[LANG] || TX.zh; let s = d[k] != null ? d[k] : (TX.zh[k] != null ? TX.zh[k] : ZH[k] || ''); if (a != null) s = s.split('{0}').join(a); return s; };
+
+  // which browser is this? (Edge and Opera also say "Chrome" in their user agent)
+  const ua = navigator.userAgent;
+  const BROWSER = /Edg\//.test(ua) ? 'edge' : /Firefox\//.test(ua) ? 'firefox' : 'chrome';
+
+  // the extension passes its license in the #fragment (never sent to any server) so we can free the slot
+  const frag = new URLSearchParams(location.hash.slice(1));
+  const lic = { k: frag.get('k'), i: frag.get('i') };
+  if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+  let licState = '';
+
+  // one big button for the browser in use, small ones for the others (ready for when Edge / Firefox go live)
+  function renderStore() {
+    const btn = document.getElementById('storeBtn');
+    const url = STORES[BROWSER];
+    document.getElementById('storeIco').innerHTML = LOGO(BROWSER);
+    document.getElementById('storeTxt').textContent = url ? T('store', NAMES[BROWSER]) : T('soon', NAMES[BROWSER]);
+    btn.classList.toggle('soon', !url);
+    if (url) btn.href = url; else btn.removeAttribute('href');
+    const box = document.getElementById('others');
+    box.replaceChildren(T('other'));
+    Object.keys(NAMES).filter((b) => b !== BROWSER).forEach((b) => {
+      const el = document.createElement(STORES[b] ? 'a' : 'span');
+      el.className = 'ob' + (STORES[b] ? '' : ' soon');
+      if (STORES[b]) { el.href = STORES[b]; el.target = '_blank'; el.rel = 'noopener'; }
+      el.innerHTML = LOGO(b);
+      const n = document.createElement('span'); n.textContent = NAMES[b]; el.append(n);
+      if (!STORES[b]) { const t = document.createElement('small'); t.textContent = T('soon_s'); el.append(t); }
+      box.append(el);
+    });
+  }
+  function renderLic() {
+    if (!licState) return;
+    const box = document.getElementById('lic');
+    box.classList.remove('hidden', 'ok', 'bad');
+    if (licState !== 'run') box.classList.add(licState);
+    document.getElementById('licIc').innerHTML = licState === 'run' ? '<span class="spin"></span>' : licState === 'ok' ? '✓' : '!';
+    document.getElementById('licT').textContent = T('lic_' + licState + '_t');
+    document.getElementById('licP').innerHTML = T('lic_' + licState + '_p');
+  }
+  async function freeSlot() {
+    if (!lic.k || !lic.i) return;
+    licState = 'run'; renderLic();
+    try {
+      const r = await fetch('https://api.lemonsqueezy.com/v1/licenses/deactivate', {
+        method: 'POST', headers: { Accept: 'application/json', 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams({ license_key: lic.k, instance_id: lic.i }).toString()
+      });
+      const j = await r.json().catch(() => null);
+      // "instance_id not found" means it was already removed, which is also fine
+      licState = (j && (j.deactivated || /instance/i.test(j.error || ''))) ? 'ok' : 'bad';
+    } catch (e) { licState = 'bad'; }
+    lic.k = lic.i = null;
+    renderLic();
+  }
+
+  const pill = document.querySelector('.lang .pill');
+  function movePill(instant) {
+    const on = document.querySelector('.lang button.on'); if (!on) return;
+    if (instant) pill.style.transition = 'none';
+    pill.style.width = on.offsetWidth + 'px'; pill.style.transform = `translateX(${on.offsetLeft}px)`;
+    if (instant) { void pill.offsetWidth; pill.style.transition = ''; }
+  }
+  function setLang(l, instant) {
+    LANG = l;
+    document.querySelectorAll('[data-t]').forEach((el) => { el.textContent = T(el.dataset.t); });
+    document.documentElement.lang = l === 'en' ? 'en' : (l === 'cn' ? 'zh-CN' : 'zh-TW');
+    document.querySelectorAll('.lang button').forEach((b) => b.classList.toggle('on', b.dataset.lang === l));
+    document.getElementById('fbBtn').href = 'mailto:speed132454@gmail.com?subject=' + encodeURIComponent(T('mail_subject'));
+    movePill(instant); renderStore(); renderLic();
+    try { localStorage.setItem('lang', l); } catch (e) {}
+  }
+  document.querySelectorAll('.lang button').forEach((b) => b.onclick = () => setLang(b.dataset.lang));
+  let start = new URLSearchParams(location.search).get('lang');
+  if (!start) { try { start = localStorage.getItem('lang'); } catch (e) {} }
+  if (!start) { const nav = ((navigator.languages && navigator.languages[0]) || navigator.language || 'en').toLowerCase(); start = /^zh/.test(nav) ? (/(cn|sg|hans)/.test(nav) ? 'cn' : 'zh') : 'en'; }
+  setLang(['zh', 'cn', 'en'].includes(start) ? start : 'en', true);
+  addEventListener('resize', () => movePill(true));
+  if (document.fonts) document.fonts.ready.then(() => movePill(true));
+  freeSlot();
+</script>
+</body>
+</html>

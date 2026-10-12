@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Video Lasso Pro</title>
+<meta name="description" content="Upgrade Video Lasso to Pro: no download cooldown, any quality and format, full speed, unlimited clipping and recording.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20128%20128%22%20width%3D%22128%22%20height%3D%22128%22%3E%0A%3Cdefs%3E%0A%3CclipPath%20id%3D%22upfav%22%3E%3Crect%20x%3D%22-20%22%20y%3D%22-40%22%20width%3D%22180%22%20height%3D%22106%22/%3E%3C/clipPath%3E%0A%3CclipPath%20id%3D%22dnfav%22%3E%3Crect%20x%3D%22-20%22%20y%3D%2262%22%20width%3D%22180%22%20height%3D%22100%22/%3E%3C/clipPath%3E%0A%3Cmask%20id%3D%22mfav%22%20maskUnits%3D%22userSpaceOnUse%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22128%22%20height%3D%22128%22%3E%3Crect%20width%3D%22128%22%20height%3D%22128%22%20fill%3D%22%23fff%22/%3E%3Crect%20x%3D%2237%22%20y%3D%2244%22%20width%3D%227%22%20height%3D%225%22%20rx%3D%221.5%22%20fill%3D%22%23000%22/%3E%3Crect%20x%3D%2237%22%20y%3D%2279%22%20width%3D%227%22%20height%3D%225%22%20rx%3D%221.5%22%20fill%3D%22%23000%22/%3E%3Crect%20x%3D%2250%22%20y%3D%2244%22%20width%3D%227%22%20height%3D%225%22%20rx%3D%221.5%22%20fill%3D%22%23000%22/%3E%3Crect%20x%3D%2250%22%20y%3D%2279%22%20width%3D%227%22%20height%3D%225%22%20rx%3D%221.5%22%20fill%3D%22%23000%22/%3E%3Crect%20x%3D%2271%22%20y%3D%2244%22%20width%3D%227%22%20height%3D%225%22%20rx%3D%221.5%22%20fill%3D%22%23000%22/%3E%3Crect%20x%3D%2271%22%20y%3D%2279%22%20width%3D%227%22%20height%3D%225%22%20rx%3D%221.5%22%20fill%3D%22%23000%22/%3E%3Crect%20x%3D%2284%22%20y%3D%2244%22%20width%3D%227%22%20height%3D%225%22%20rx%3D%221.5%22%20fill%3D%22%23000%22/%3E%3Crect%20x%3D%2284%22%20y%3D%2279%22%20width%3D%227%22%20height%3D%225%22%20rx%3D%221.5%22%20fill%3D%22%23000%22/%3E%3Cpath%20d%3D%22M57%2054%20L57%2074%20L76%2064%20Z%22%20fill%3D%22%23000%22%20stroke%3D%22%23000%22%20stroke-width%3D%224%22%20stroke-linejoin%3D%22round%22/%3E%3C/mask%3E%0A%3C/defs%3E%0A%3Cg%20transform%3D%22rotate%28-24%2064%2064%29%22%3E%3Cellipse%20cx%3D%2264%22%20cy%3D%2264%22%20rx%3D%2250%22%20ry%3D%2231%22%20fill%3D%22none%22%20stroke%3D%22%23F2A900%22%20stroke-width%3D%228%22%20clip-path%3D%22url%28%23upfav%29%22/%3E%3C/g%3E%0A%3Cg%20transform%3D%22rotate%28-8%2064%2064%29%22%3E%3Crect%20x%3D%2231%22%20y%3D%2240%22%20width%3D%2266%22%20height%3D%2248%22%20rx%3D%228%22%20fill%3D%22%23000000%22%20mask%3D%22url%28%23mfav%29%22/%3E%3C/g%3E%0A%3Cg%20transform%3D%22rotate%28-24%2064%2064%29%22%3E%3Cellipse%20cx%3D%2264%22%20cy%3D%2264%22%20rx%3D%2250%22%20ry%3D%2231%22%20fill%3D%22none%22%20stroke%3D%22%23FFC83D%22%20stroke-width%3D%228%22%20clip-path%3D%22url%28%23dnfav%29%22/%3E%3Crect%20x%3D%22105%22%20y%3D%2256%22%20width%3D%2217%22%20height%3D%2216%22%20rx%3D%225.5%22%20fill%3D%22%23FFB000%22%20stroke%3D%22%23B87400%22%20stroke-width%3D%222%22/%3E%3C/g%3E%0A%3Cpath%20d%3D%22M109%2044%20C122%2052%20119%2072%20104%2080%22%20fill%3D%22none%22%20stroke%3D%22%23FFC83D%22%20stroke-width%3D%227%22%20stroke-linecap%3D%22round%22/%3E%0A%3C/svg%3E">
+<style>
+  :root {
+    --bg: #0c0d10; --card: #15171c; --card2: #1c1f26; --line: rgba(255,255,255,.08); --line2: rgba(255,255,255,.15);
+    --text: #f3f4f6; --sub: #9aa0aa; --green: #3b9cff; --green2: #7cc0ff;
+    --gold: #f5c451; --gold2: #e0a526; --silver: #d7dce4; --silver2: #9ea6b3;
+    --ease: cubic-bezier(.2,.8,.2,1); --spring: cubic-bezier(.34,1.56,.64,1);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  body::before { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: -1;
+    background: radial-gradient(900px 520px at 15% -10%, rgba(245,196,81,.10), transparent 60%),
+                radial-gradient(800px 520px at 100% 20%, rgba(59,156,255,.07), transparent 60%); }
+  a { color: inherit; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- top bar ---------- */
+  .top { display: flex; align-items: center; gap: 10px; padding: 18px 0; }
+  .home { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; border-radius: 12px; padding: 4px 8px 4px 4px; margin-left: -4px; transition: background .2s; }
+  .home:hover { background: rgba(255,255,255,.05); }
+  .home svg { width: 34px; height: 34px; flex: none; transition: transform .45s var(--spring); }
+  .home:hover svg { transform: rotate(-8deg) scale(1.08); }
+  .home b { font-size: 15px; letter-spacing: -.2px; }
+  .top .sp { flex: 1; }
+  .lang { position: relative; display: flex; background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 3px; }
+  .lang .pill { position: absolute; top: 3px; bottom: 3px; left: 0; width: 0; border-radius: 16px; background: var(--card2);
+    box-shadow: inset 0 0 0 1px var(--line2), 0 2px 8px rgba(0,0,0,.35); transition: transform .45s var(--spring), width .45s var(--spring); }
+  .lang button { position: relative; z-index: 1; border: 0; background: none; color: var(--sub); font: 600 12px inherit;
+    padding: 5px 11px; border-radius: 16px; cursor: pointer; transition: color .25s; }
+  .lang button:hover, .lang button.on { color: var(--text); }
+
+  /* ---------- hero ---------- */
+  .hero { text-align: center; padding: 30px 0 26px; }
+  .logo-stage { position: relative; width: 150px; height: 150px; margin: 0 auto; perspective: 600px; cursor: pointer; }
+  .logo-stage::before { content: ""; position: absolute; inset: -90px; border-radius: 50%; pointer-events: none;
+    background: radial-gradient(circle, rgba(245,196,81,.28), rgba(245,196,81,.08) 40%, transparent 68%); animation: breathe 4.5s ease-in-out infinite; }
+  .logo-stage .tilt { position: relative; width: 100%; height: 100%; transition: transform .25s var(--ease); transform-style: preserve-3d; }
+  .logo-stage svg { width: 100%; height: 100%; animation: float 5s ease-in-out infinite; }
+  .logo-stage.pop .tilt { animation: pop .6s var(--spring); }
+  @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+  @keyframes breathe { 0%,100% { opacity: .75; transform: scale(.94); } 50% { opacity: 1; transform: scale(1.06); } }
+  @keyframes pop { 0% { transform: scale(1); } 35% { transform: scale(.86) rotate(-6deg); } 70% { transform: scale(1.1) rotate(4deg); } 100% { transform: scale(1); } }
+  .hero h1 { font-size: clamp(28px, 5vw, 44px); line-height: 1.2; margin: 18px 0 12px; letter-spacing: -.6px; }
+  .pro { display: inline-block; font-size: .48em; vertical-align: .6em; margin-left: 8px; padding: 3px 10px; border-radius: 8px;
+    color: #2a1d00; background: linear-gradient(110deg, var(--gold2), var(--gold) 35%, #fff1c4 50%, var(--gold) 65%, var(--gold2));
+    background-size: 250% 100%; animation: sheen 3.5s linear infinite; letter-spacing: .5px; font-weight: 800; }
+  @keyframes sheen { 0% { background-position: 100% 0; } 100% { background-position: -150% 0; } }
+  .hero p { color: var(--sub); font-size: 16px; max-width: 600px; margin: 0 auto; }
+
+  .platforms { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+  .pf { display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px 7px 9px; border-radius: 30px; text-decoration: none; font-size: 13px; font-weight: 700;
+    background: var(--card); border: 1px solid var(--line); transition: transform .25s var(--spring), border-color .25s, box-shadow .25s; }
+  .pf img { width: 20px; height: 20px; flex: none; object-fit: contain; }
+  .pfw { display: flex; flex-direction: column; align-items: center; gap: 5px; }
+  .pfw .cur { font-size: 11.5px; color: var(--sub); opacity: .65; visibility: hidden; }
+  .pfw.me .cur { visibility: visible; }
+  .pf small { font-size: 11px; font-weight: 700; padding: 1px 7px; border-radius: 10px; }
+  .pf.live small { color: var(--green2); background: rgba(59,156,255,.14); }
+  .pf.soon { color: var(--sub); }
+  .pf.soon img { filter: grayscale(.35); opacity: .85; }
+  .pf.soon small { color: var(--sub); background: rgba(255,255,255,.06); }
+  .pf:hover { transform: translateY(-3px); border-color: var(--line2); box-shadow: 0 10px 24px rgba(0,0,0,.4); }
+
+  /* ---------- views ---------- */
+  .lang { flex: none; } .lang button { white-space: nowrap; }
+  .views { position: relative; margin-top: 30px; }
+  .view[hidden] { display: none; }
+
+  /* ---------- plans ---------- */
+  .plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; align-items: stretch; perspective: 1300px; padding-top: 34px; }
+  .plan { position: relative; background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 26px 22px 22px;
+    display: flex; flex-direction: column; cursor: pointer; transform-style: preserve-3d;
+    transition: transform .35s var(--ease), border-color .3s, box-shadow .35s var(--ease), opacity .35s; --mx: 50%; --my: 0%; }
+  .plan .glow { position: absolute; inset: 0; border-radius: inherit; pointer-events: none; opacity: 0; transition: opacity .3s;
+    background: radial-gradient(380px circle at var(--mx) var(--my), rgba(255,255,255,.08), transparent 45%); }
+  .plan:hover .glow { opacity: 1; }
+  .plan:hover { border-color: var(--line2); box-shadow: 0 26px 60px rgba(0,0,0,.5); }
+  /* silver (3 months) */
+  .plan.silver { border-color: rgba(215,220,228,.38); background: linear-gradient(170deg, rgba(215,220,228,.09), var(--card) 55%); }
+  .plan.silver:hover { box-shadow: 0 26px 70px rgba(215,220,228,.12), 0 0 0 1px rgba(215,220,228,.5); }
+  /* gold (6 months) */
+  .plan.gold { border-color: rgba(245,196,81,.45); background: linear-gradient(170deg, rgba(245,196,81,.11), var(--card) 55%); }
+  .plan.gold:hover { box-shadow: 0 26px 70px rgba(245,196,81,.16), 0 0 0 1px rgba(245,196,81,.55); }
+  .plan.silver::after, .plan.gold::after { content: ""; position: absolute; inset: -1px; border-radius: inherit; padding: 1px; pointer-events: none;
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude;
+    animation: spin 6s linear infinite; }
+  .plan.silver::after { background: conic-gradient(from var(--ang, 0deg), transparent 0 72%, rgba(235,240,248,.9) 82%, transparent 92%); }
+  .plan.gold::after { background: conic-gradient(from var(--ang, 0deg), transparent 0 72%, rgba(245,196,81,.95) 82%, transparent 92%); animation-duration: 5s; }
+  @property --ang { syntax: "<angle>"; initial-value: 0deg; inherits: false; }
+  @keyframes spin { to { --ang: 360deg; } }
+
+  .badge { position: absolute; top: 14px; right: 14px; font-size: 11.5px; font-weight: 800; padding: 3px 10px; border-radius: 20px; animation: bob 2.6s ease-in-out infinite; }
+  .silver .badge { color: #1b1f26; background: linear-gradient(135deg, #f4f6fa, var(--silver) 50%, var(--silver2)); box-shadow: 0 4px 14px rgba(215,220,228,.25); }
+  .gold .badge { color: #2a1d00; background: linear-gradient(135deg, #ffd36e, var(--gold) 50%, var(--gold2)); box-shadow: 0 4px 14px rgba(245,196,81,.35); }
+  @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
+
+  .crown { position: absolute; top: -40px; left: 50%; width: 58px; height: 46px; margin-left: -29px; transform-origin: 50% 100%;
+    transition: transform .35s var(--spring); filter: drop-shadow(0 6px 14px rgba(215,220,228,.35)); z-index: 2; }
+  .crown svg { width: 100%; height: 100%; overflow: visible; }
+  .crown .spark { opacity: 0; transform-origin: center; transform-box: fill-box; }
+  .plan.silver:hover .crown .spark { animation: twinkle 1.2s ease-in-out infinite; }
+  .plan.silver:hover .crown .spark:nth-of-type(2) { animation-delay: .4s; }
+  .plan.silver:hover .crown .spark:nth-of-type(3) { animation-delay: .8s; }
+  @keyframes twinkle { 0%,100% { opacity: 0; transform: scale(.3); } 50% { opacity: 1; transform: scale(1); } }
+  .crown .gem { transition: fill .3s; }
+  .plan.silver:hover .crown .gem { fill: #8fd3ff; }
+
+  .plan h2 { font-size: 19px; }
+  .plan .for { color: var(--sub); font-size: 13px; margin-top: 2px; min-height: 40px; }
+  .price { margin: 14px 0 2px; display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; }
+  .price b { font-size: 40px; letter-spacing: -1px; font-variant-numeric: tabular-nums; transition: transform .35s var(--spring); transform-origin: left bottom; }
+  .plan:hover .price b { transform: scale(1.05); }
+  .price span { color: var(--sub); font-size: 13.5px; margin-left: 4px; }
+  .avg { display: inline-block; font-size: 12.5px; font-weight: 700; padding: 2px 9px; border-radius: 12px; margin-top: 4px; }
+  .silver .avg { color: var(--silver); background: rgba(215,220,228,.10); }
+  .gold .avg { color: var(--gold); background: rgba(245,196,81,.12); }
+  .avg.plain { color: var(--sub); background: rgba(255,255,255,.05); }
+  .note { color: var(--sub); font-size: 12.5px; margin-top: 8px; }
+  .plan ul { list-style: none; margin: 16px 0 22px; display: grid; gap: 9px; font-size: 13.5px; flex: 1; }
+  .plan li, .summary li { display: flex; gap: 9px; align-items: flex-start; }
+  .plan li::before, .summary li::before { content: "✓"; flex: none; width: 18px; height: 18px; border-radius: 50%; display: grid; place-items: center; margin-top: 1px;
+    font-size: 11px; font-weight: 900; color: var(--green2); background: rgba(59,156,255,.14); }
+
+  .btn { position: relative; display: block; width: 100%; text-align: center; text-decoration: none; font: 800 15px inherit; cursor: pointer;
+    padding: 13px 16px; border-radius: 13px; color: var(--text); background: var(--card2); border: 1px solid var(--line2); overflow: hidden;
+    transition: transform .25s var(--spring), box-shadow .25s var(--ease), filter .2s; }
+  .btn:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(0,0,0,.45); filter: brightness(1.12); }
+  .btn:active { transform: translateY(0) scale(.97); transition-duration: .08s; }
+  .btn.silver-b { color: #1b1f26; border: 0; background: linear-gradient(135deg, #f4f6fa, var(--silver) 45%, var(--silver2)); box-shadow: 0 8px 22px rgba(215,220,228,.18); }
+  .btn.gold-b { color: #2a1d00; border: 0; background: linear-gradient(135deg, #ffd36e, var(--gold) 45%, var(--gold2)); box-shadow: 0 8px 24px rgba(245,196,81,.25); }
+  .btn::after { content: ""; position: absolute; top: 0; bottom: 0; left: -60%; width: 40%; transform: skewX(-20deg);
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,.4), transparent); transition: left .6s var(--ease); }
+  .btn:hover::after { left: 130%; }
+  .btn .arrow { display: inline-block; margin-left: 6px; transition: transform .25s var(--spring); }
+  .btn:hover .arrow { transform: translateX(4px); }
+  .secure { text-align: center; color: var(--sub); font-size: 12.5px; margin-top: 20px; display: flex; gap: 6px; justify-content: center; align-items: center; flex-wrap: wrap; }
+  .secure svg { width: 14px; height: 14px; flex: none; }
+
+  .plan.launch { animation: launch .6s var(--spring); }
+  @keyframes launch { 0% { transform: scale(1); } 30% { transform: scale(.95); } 100% { transform: scale(1); } }
+  /* plan <-> payment transitions */
+  .plans.leaving .plan { transform: scale(.82) translateY(10px) !important; opacity: 0; transition: transform .38s var(--ease), opacity .3s; }
+  .plans.leaving .plan:nth-child(2) { transition-delay: .05s; }
+  .plans.leaving .plan:nth-child(3) { transition-delay: .1s; }
+  .plans.entering .plan { animation: planIn .55s var(--spring) both; }
+  .plans.entering .plan:nth-child(2) { animation-delay: .06s; }
+  .plans.entering .plan:nth-child(3) { animation-delay: .12s; }
+  @keyframes planIn { from { opacity: 0; transform: scale(.82) translateY(10px); } to { opacity: 1; transform: none; } }
+  .pay.entering { animation: payIn .6s var(--ease) both; }
+  .pay.leaving { animation: payOut .32s var(--ease) both; }
+  @keyframes payIn { from { opacity: 0; transform: translateY(18px) scale(.97); clip-path: inset(6% 10% 60% 10% round 24px); } to { opacity: 1; transform: none; clip-path: inset(0 0 0 0 round 0); } }
+  @keyframes payOut { from { opacity: 1; transform: none; } to { opacity: 0; transform: translateY(14px) scale(.97); } }
+
+  /* ---------- inline checkout ---------- */
+  .pay { width: min(480px, 100%); margin: 0 auto; }
+  .paybar { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 12px; }
+  .back { display: inline-flex; align-items: center; gap: 6px; border: 0; background: none; color: var(--sub);
+    font: 700 14px inherit; cursor: pointer; padding: 6px 12px 6px 6px; border-radius: 10px; transition: color .2s, background .2s; }
+  .back:hover { color: var(--text); background: var(--card); }
+  .back > span:first-child { display: inline-block; transition: transform .25s var(--spring); }
+  .back:hover > span:first-child { transform: translateX(-4px); }
+  .paysum { display: inline-flex; align-items: baseline; gap: 8px; background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; font-size: 13px; white-space: nowrap; }
+  .paysum { font: inherit; font-size: 13px; color: var(--text); cursor: pointer; transition: border-color .2s, background .2s, transform .25s var(--spring); }
+  .paysum:hover { background: var(--card2); transform: translateY(-1px); }
+  .paysum .chev { width: 16px; height: 16px; fill: var(--sub); align-self: center; margin-left: -2px; transition: transform .3s var(--spring); }
+  .paysum[aria-expanded="true"] .chev { transform: rotate(180deg); }
+  .psw { position: relative; }
+  .pmenu { position: absolute; right: 0; top: calc(100% + 8px); z-index: 20; min-width: 250px; padding: 6px; border-radius: 16px;
+    background: rgba(22,24,29,.96); border: 1px solid var(--line2); box-shadow: 0 20px 50px rgba(0,0,0,.55); backdrop-filter: blur(10px);
+    opacity: 0; transform: translateY(-6px) scale(.97); transform-origin: top right; pointer-events: none; transition: opacity .2s, transform .3s var(--spring); }
+  .pmenu.open { opacity: 1; transform: none; pointer-events: auto; }
+  .pmenu button { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 2px 12px; width: 100%; text-align: left; border: 0; background: none;
+    color: var(--text); font: inherit; padding: 9px 12px; border-radius: 11px; cursor: pointer; transition: background .15s; }
+  .pmenu button:hover { background: rgba(255,255,255,.06); }
+  .pmenu button.on { background: rgba(255,255,255,.08); box-shadow: inset 0 0 0 1px var(--line2); }
+  .pmenu .pn { font-weight: 800; font-size: 13.5px; display: flex; align-items: center; gap: 6px; }
+  .pmenu .pp { font-weight: 800; font-size: 13.5px; font-variant-numeric: tabular-nums; }
+  .pmenu .pa { grid-column: 1 / -1; font-size: 11.5px; color: var(--sub); }
+  .pmenu .tag { font-size: 10px; font-weight: 800; padding: 1px 6px; border-radius: 6px; color: #1c1f26; background: #d7dce4; }
+  .pmenu .tag.gold { background: linear-gradient(135deg, #ffd36e, var(--gold) 50%, var(--gold2)); color: #2a1d00; }
+  .pmenu [data-plan="life"] .pn { color: var(--gold); }
+  .checkout.swap { animation: swapIn .45s var(--ease); }
+  @keyframes swapIn { from { opacity: .3; transform: scale(.985); } to { opacity: 1; transform: none; } }
+  .paysum b { font-size: 13.5px; }
+  .paysum span { color: var(--sub); font-variant-numeric: tabular-nums; }
+  .paysum.silver { border-color: rgba(215,220,228,.45); }
+  .paysum.gold { border-color: rgba(245,196,81,.5); }
+  .paysum.gold b { color: var(--gold); }
+  .payafter { color: var(--sub); font-size: 12.5px; text-align: center; margin: 0 4px 12px; }
+  .checkout { position: relative; background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 24px 70px rgba(0,0,0,.45), 0 0 0 1px rgba(255,255,255,.06); }
+  .checkout iframe { display: block; width: 100%; height: 2060px; border: 0; overflow: hidden; }
+  .checkout iframe[hidden] { display: none; }
+  .loading { position: absolute; inset: 0 0 auto 0; height: 520px; display: grid; place-items: center; align-content: center; gap: 12px; color: #6b7280; font-size: 14px; background: #fff; transition: opacity .4s; z-index: 1; }
+  .loading.done { opacity: 0; pointer-events: none; }
+  .spinner { width: 34px; height: 34px; border-radius: 50%; border: 3px solid #e5e7eb; border-top-color: var(--gold2); animation: rot .8s linear infinite; }
+  @keyframes rot { to { transform: rotate(360deg); } }
+  .payterms { text-align: center; color: var(--sub); font-size: 12px; margin-top: 12px; }
+  .payterms a { color: var(--gold); }
+  /* while paying: only the checkout + footer */
+  body.paying .logo-stage, body.paying .hero > p, body.paying .platforms, body.paying section { display: none; }
+  body.paying .hero { padding-bottom: 6px; }
+  @media (max-width: 520px) { .checkout iframe { height: 2200px; } .paybar { flex-wrap: wrap; } }
+
+  /* ---------- sections ---------- */
+  section { padding: 70px 0 0; }
+  section h3.t { font-size: 24px; text-align: center; margin-bottom: 8px; letter-spacing: -.3px; }
+  section p.lead { text-align: center; color: var(--sub); font-size: 14px; max-width: 620px; margin: 0 auto 24px; }
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+  .reveal.in { opacity: 1; transform: none; }
+  .narrow { max-width: 820px; margin: 0 auto; }
+
+  table { width: 100%; border-collapse: separate; border-spacing: 0; background: var(--card); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; font-size: 14px; }
+  th, td { padding: 13px 18px; text-align: left; border-bottom: 1px solid var(--line); transition: background .2s; }
+  tbody tr:hover td { background: rgba(255,255,255,.035); }
+  tbody tr:hover td:last-child { background: rgba(245,196,81,.07); }
+  tr:last-child td { border-bottom: 0; }
+  th { font-size: 13px; color: var(--sub); font-weight: 700; background: var(--card2); }
+  th:not(:first-child), td:not(:first-child) { text-align: center; width: 100px; white-space: nowrap; }
+  .y { color: var(--green2); font-weight: 800; }
+  .n { color: #555b65; }
+  .v { color: var(--sub); font-size: 12.5px; }
+  .g { color: var(--gold); font-weight: 800; }
+  .soon-tag { display: inline-block; margin-left: 6px; font-size: 10.5px; font-weight: 800; color: var(--gold); background: rgba(245,196,81,.12); padding: 1px 7px; border-radius: 10px; vertical-align: 1px; }
+
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .step { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 20px; transition: transform .3s var(--spring), border-color .3s, box-shadow .3s; }
+  .step:hover { transform: translateY(-5px); border-color: var(--line2); box-shadow: 0 18px 40px rgba(0,0,0,.4); }
+  .step i { font-style: normal; display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 50%;
+    background: rgba(245,196,81,.14); color: var(--gold); font-weight: 800; font-size: 14px; transition: transform .5s var(--spring); }
+  .step:hover i { transform: rotate(360deg) scale(1.1); }
+  .step b { display: block; margin: 12px 0 4px; }
+  .step p { color: var(--sub); font-size: 13.5px; }
+  .center { text-align: center; margin-top: 18px; }
+  .btn.inline { display: inline-block; width: auto; padding: 11px 22px; }
+
+  .notice { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .ncard { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 20px 20px 18px; display: flex; gap: 14px; transition: transform .3s var(--spring), border-color .3s; }
+  .ncard:hover { transform: translateY(-4px); border-color: var(--line2); }
+  .ncard .ic { flex: none; width: 38px; height: 38px; border-radius: 12px; display: grid; place-items: center; }
+  .ncard .ic svg { width: 20px; height: 20px; }
+  .ncard.warn .ic { background: rgba(251,113,133,.12); color: #fb7185; }
+  .ncard.info .ic { background: rgba(56,189,248,.12); color: #38bdf8; }
+  .ncard b { display: block; margin-bottom: 4px; }
+  .ncard p { color: var(--sub); font-size: 13.5px; }
+
+  .faq { display: grid; gap: 10px; }
+  .qa { background: var(--card); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; transition: border-color .3s, background .3s, transform .25s var(--spring); }
+  .qa:hover { border-color: var(--line2); transform: translateY(-2px); }
+  .qa.open { border-color: rgba(245,196,81,.35); background: linear-gradient(180deg, rgba(245,196,81,.05), var(--card)); }
+  .qa button { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 12px; border: 0; background: none;
+    color: var(--text); font: 700 15px inherit; text-align: left; padding: 16px 20px; cursor: pointer; }
+  .qa .ic { flex: none; width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; background: var(--card2); transition: transform .45s var(--spring), background .3s; }
+  .qa .ic::before { content: ""; width: 8px; height: 8px; border-right: 2px solid var(--sub); border-bottom: 2px solid var(--sub); transform: translateY(-2px) rotate(45deg); transition: border-color .3s; }
+  .qa.open .ic { transform: rotate(180deg); background: rgba(245,196,81,.18); }
+  .qa.open .ic::before { border-color: var(--gold); }
+  .qa .body { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .45s var(--ease); }
+  .qa.open .body { grid-template-rows: 1fr; }
+  .qa .body > div { overflow: hidden; }
+  .qa .body p { color: var(--sub); font-size: 14px; padding: 0 20px 18px;
+    -webkit-mask-image: linear-gradient(90deg, #000 45%, transparent 55%); mask-image: linear-gradient(90deg, #000 45%, transparent 55%);
+    -webkit-mask-size: 260% 100%; mask-size: 260% 100%; -webkit-mask-position: 100% 0; mask-position: 100% 0;
+    transition: -webkit-mask-position .2s, mask-position .2s; }
+  .qa.open .body p { -webkit-mask-position: 0 0; mask-position: 0 0; transition: -webkit-mask-position .9s .12s var(--ease), mask-position .9s .12s var(--ease); }
+
+  footer { text-align: center; color: var(--sub); font-size: 12.5px; padding: 70px 0 40px; }
+  footer nav { display: flex; justify-content: center; gap: 18px; flex-wrap: wrap; margin-bottom: 10px; }
+  footer a { color: var(--sub); text-decoration: none; transition: color .2s; }
+  footer a:hover { color: var(--gold); }
+  footer .disc { max-width: 720px; margin: 10px auto 0; font-size: 11.5px; opacity: .75; line-height: 1.7; }
+
+  @media (max-width: 900px) {
+    .plans { grid-template-columns: 1fr; max-width: 440px; margin: 0 auto; gap: 44px; }
+    .plan .for { min-height: 0; }
+    .summary { position: static; }
+  }
+  @media (max-width: 640px) {
+    .steps, .notice { grid-template-columns: 1fr; }
+    table { font-size: 13px; }
+    th, td { padding: 10px 10px; }
+    th:not(:first-child), td:not(:first-child) { width: auto; padding: 10px 8px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    .reveal { opacity: 1; transform: none; }
+  }
+  .home b { line-height: 1.1; white-space: nowrap; }
+  .home b .for { display: block; font-weight: 600; font-size: 11px; color: var(--sub); margin-top: 1px; }
+  h1 .h-for { font-weight: 600; font-size: .62em; color: var(--sub); letter-spacing: 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a class="home" href="./" id="homeLink"><svg viewBox="0 0 128 128"> <defs> <clipPath id="ups"><rect x="-20" y="-40" width="180" height="106"/></clipPath> <clipPath id="dns"><rect x="-20" y="62" width="180" height="100"/></clipPath> <mask id="ms" maskUnits="userSpaceOnUse" x="0" y="0" width="128" height="128"><rect width="128" height="128" fill="#fff"/><rect x="37" y="44" width="7" height="5" rx="1.5" fill="#000"/><rect x="37" y="79" width="7" height="5" rx="1.5" fill="#000"/><rect x="50" y="44" width="7" height="5" rx="1.5" fill="#000"/><rect x="50" y="79" width="7" height="5" rx="1.5" fill="#000"/><rect x="71" y="44" width="7" height="5" rx="1.5" fill="#000"/><rect x="71" y="79" width="7" height="5" rx="1.5" fill="#000"/><rect x="84" y="44" width="7" height="5" rx="1.5" fill="#000"/><rect x="84" y="79" width="7" height="5" rx="1.5" fill="#000"/><path d="M57 54 L57 74 L76 64 Z" fill="#000" stroke="#000" stroke-width="4" stroke-linejoin="round"/></mask> </defs> <g transform="rotate(-24 64 64)"><ellipse cx="64" cy="64" rx="50" ry="31" fill="none" stroke="#F2A900" stroke-width="8" clip-path="url(#ups)"/></g> <g transform="rotate(-8 64 64)"><rect x="31" y="40" width="66" height="48" rx="8" fill="#FFFFFF" mask="url(#ms)"/></g> <g transform="rotate(-24 64 64)"><ellipse cx="64" cy="64" rx="50" ry="31" fill="none" stroke="#FFC83D" stroke-width="8" clip-path="url(#dns)"/><rect x="105" y="56" width="17" height="16" rx="5.5" fill="#FFB000" stroke="#B87400" stroke-width="2"/></g> <path d="M109 44 C122 52 119 72 104 80" fill="none" stroke="#FFC83D" stroke-width="7" stroke-linecap="round"/> </svg><b>Video Lasso</b></a>
+    <span class="sp"></span>
+    <div class="lang" role="group" aria-label="Language">
+      <span class="pill"></span>
+      <button data-lang="zh">繁中</button>
+      <button data-lang="cn">简中</button>
+      <button data-lang="en">EN</button>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div class="logo-stage" id="logoStage"><div class="tilt"><svg viewBox="0 0 128 128"> <defs> <clipPath id="upb"><rect x="-20" y="-40" width="180" height="106"/></clipPath> <clipPath id="dnb"><rect x="-20" y="62" width="180" height="100"/></clipPath> <mask id="mb" maskUnits="userSpaceOnUse" x="0" y="0" width="128" height="128"><rect width="128" height="128" fill="#fff"/><rect x="37" y="44" width="7" height="5" rx="1.5" fill="#000"/><rect x="37" y="79" width="7" height="5" rx="1.5" fill="#000"/><rect x="50" y="44" width="7" height="5" rx="1.5" fill="#000"/><rect x="50" y="79" width="7" height="5" rx="1.5" fill="#000"/><rect x="71" y="44" width="7" height="5" rx="1.5" fill="#000"/><rect x="71" y="79" width="7" height="5" rx="1.5" fill="#000"/><rect x="84" y="44" width="7" height="5" rx="1.5" fill="#000"/><rect x="84" y="79" width="7" height="5" rx="1.5" fill="#000"/><path d="M57 54 L57 74 L76 64 Z" fill="#000" stroke="#000" stroke-width="4" stroke-linejoin="round"/></mask> </defs> <g transform="rotate(-24 64 64)"><ellipse cx="64" cy="64" rx="50" ry="31" fill="none" stroke="#F2A900" stroke-width="8" clip-path="url(#upb)"/></g> <g transform="rotate(-8 64 64)"><rect x="31" y="40" width="66" height="48" rx="8" fill="#FFFFFF" mask="url(#mb)"/></g> <g transform="rotate(-24 64 64)"><ellipse cx="64" cy="64" rx="50" ry="31" fill="none" stroke="#FFC83D" stroke-width="8" clip-path="url(#dnb)"/><rect x="105" y="56" width="17" height="16" rx="5.5" fill="#FFB000" stroke="#B87400" stroke-width="2"/></g> <path d="M109 44 C122 52 119 72 104 80" fill="none" stroke="#FFC83D" stroke-width="7" stroke-linecap="round"/> </svg></div></div>
+    <h1><span data-t="hero_t">升級到</span> Video Lasso<span class="pro">PRO</span></h1>
+    <p data-t="hero_p">解鎖帳號清理自選、完整播放清單控制與久未更新頻道的一鍵退訂，並移除贊助橫幅。備份與還原永遠免費。</p>
+    <div class="platforms">
+      <div class="pfw" data-b="chrome"><span class="pf soon"><img src="img/chrome_logo.png" alt="" width="20" height="20"><span>Chrome</span><small data-t="pf_soon">即將上架</small></span><span class="cur" data-t="pf_cur">（當前瀏覽器）</span></div>
+      <div class="pfw" data-b="edge"><span class="pf soon"><img src="img/edge_logo.png" alt="" width="20" height="20"><span>Edge</span><small data-t="pf_soon">即將上架</small></span><span class="cur" data-t="pf_cur">（當前瀏覽器）</span></div>
+      <div class="pfw" data-b="firefox"><span class="pf soon"><img src="img/firefox_logo.png" alt="" width="20" height="20"><span>Firefox</span><small data-t="pf_soon">即將上架</small></span><span class="cur" data-t="pf_cur">（當前瀏覽器）</span></div>
+    </div>
+  </div>
+
+  <div class="views">
+    <!-- ===== plans ===== -->
+    <div class="view" id="vPlans">
+      <div class="plans" id="plans">
+        <div class="plan" data-plan="m1" tabindex="0">
+          <span class="glow"></span>
+          <h2 data-t="m1_name">1 個月</h2>
+          <div class="for" data-t="m1_for">先試試看，隨時可以取消</div>
+          <div class="price"><b>$5.99</b><span data-t="per_m1">USD / 每月</span></div>
+          <div><span class="avg plain" data-t="m1_avg">按月計費</span></div>
+          <div class="note" data-t="renew_note">自動續約・可隨時取消</div>
+          <ul><li data-t="f_all">所有 Pro 功能</li><li data-t="f_cancel">取消後仍可用到當期結束</li><li data-t="f_dev3">最多 3 個瀏覽器同時使用</li></ul>
+          <button class="btn" type="button"><span data-t="btn_m1">選擇 1 個月</span><span class="arrow">→</span></button>
+        </div>
+
+        <div class="plan silver" data-plan="y1" tabindex="0">
+          <span class="glow"></span>
+          <div class="crown" aria-hidden="true">
+            <svg viewBox="0 0 64 50">
+              <defs><linearGradient id="cg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".55" stop-color="#d7dce4"/><stop offset="1" stop-color="#8f98a6"/></linearGradient></defs>
+              <path d="M6 40 L3 12 L19 25 L32 4 L45 25 L61 12 L58 40 Z" fill="url(#cg)" stroke="#f4f6fa" stroke-width="1.5" stroke-linejoin="round"/>
+              <rect x="6" y="40" width="52" height="7" rx="3" fill="url(#cg)" stroke="#f4f6fa" stroke-width="1.2"/>
+              <circle class="gem" cx="32" cy="30" r="4.2" fill="#b8c2d0"/>
+              <circle cx="3" cy="11" r="3" fill="#f4f6fa"/><circle cx="32" cy="4" r="3.2" fill="#f4f6fa"/><circle cx="61" cy="11" r="3" fill="#f4f6fa"/>
+              <path class="spark" d="M-6 2 l2 -6 l2 6 l6 2 l-6 2 l-2 6 l-2 -6 l-6 -2 z" fill="#fff"/>
+              <path class="spark" d="M66 -2 l1.5 -4.5 l1.5 4.5 l4.5 1.5 l-4.5 1.5 l-1.5 4.5 l-1.5 -4.5 l-4.5 -1.5 z" fill="#fff"/>
+              <path class="spark" d="M44 -8 l1.2 -3.6 l1.2 3.6 l3.6 1.2 l-3.6 1.2 l-1.2 3.6 l-1.2 -3.6 l-3.6 -1.2 z" fill="#fff"/>
+            </svg>
+          </div>
+          <span class="badge" data-t="popular">最受歡迎</span>
+          <h2 data-t="y1_name">1 年</h2>
+          <div class="for" data-t="y1_for">常常下載影片，長期使用更划算</div>
+          <div class="price"><b>$39.99</b><span data-t="per_y1">USD / 每年</span></div>
+          <div><span class="avg" data-t="y1_avg">平均 $3.33 / 月</span></div>
+          <div class="note" data-t="renew_note">自動續約・可隨時取消</div>
+          <ul><li data-t="f_all">所有 Pro 功能</li><li data-t="f_save">比月繳省約 44%</li><li data-t="f_dev5">最多 5 個瀏覽器同時使用</li></ul>
+          <button class="btn silver-b" type="button"><span data-t="btn_y1">選擇 1 年</span><span class="arrow">→</span></button>
+        </div>
+
+        <div class="plan gold" data-plan="life" tabindex="0">
+          <span class="glow"></span>
+          <span class="badge" data-t="best">最划算</span>
+          <h2 data-t="life_name">永久</h2>
+          <div class="for" data-t="life_for">買一次，永久使用</div>
+          <div class="price"><b>$79.99</b><span data-t="per_life">USD / 一次付清</span></div>
+          <div><span class="avg" data-t="life_avg">不用續約，沒有後續費用</span></div>
+          <div class="note" data-t="norenew_note">一次付清・不會自動續約</div>
+          <ul><li data-t="f_all">所有 Pro 功能</li><li data-t="f_upd">包含後續所有更新</li><li data-t="f_dev5">最多 5 個瀏覽器同時使用</li></ul>
+          <button class="btn gold-b" type="button"><span data-t="btn_life">選擇永久方案</span><span class="arrow">→</span></button>
+        </div>
+      </div>
+      <div class="secure"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span data-t="secure">付款由 Lemon Squeezy 安全處理，支援信用卡與 PayPal。我們不會取得你的付款資訊。</span></div>
+    </div>
+
+
+    <!-- ===== inline checkout ===== -->
+    <div class="view pay" id="vPay" hidden>
+      <div class="paybar">
+        <button class="back" id="payBack" type="button"><span>←</span><span data-t="pay_back">返回選擇方案</span></button>
+        <div class="psw">
+          <button class="paysum" id="paySum" type="button" aria-haspopup="listbox" aria-expanded="false"><b id="payName"></b><span id="payPrice"></span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.4 8.6 12 13.2l4.6-4.6L18 10l-6 6-6-6z"/></svg></button>
+          <div class="pmenu" id="planMenu" role="listbox"></div>
+        </div>
+      </div>
+      <p class="payafter" data-t="pay_after">付款完成後，授權碼會顯示在結帳頁並寄到你的信箱。打開擴充功能 → 設定 → 升級 Pro，貼上即可。</p>
+      <div class="checkout" id="checkout">
+        <div class="loading" id="payLoading"><div class="spinner"></div><span data-t="pay_loading">正在載入安全結帳頁面…</span></div>
+      </div>
+      <p class="payterms"><span data-t="pay_terms">付款即表示你同意</span> <a href="terms.html" data-t="terms">服務條款</a> · <a href="privacy.html" data-t="privacy">隱私權政策</a></p>
+    </div>
+  </div>
+
+  <section class="reveal narrow">
+    <h3 class="t" data-t="cmp_t">免費版與 Pro 比較</h3>
+    <p class="lead" data-t="cmp_lead">備份與還原永遠免費；Pro 讓你把帳號整理得更細。</p>
+    <table>
+      <thead><tr><th data-t="cmp_feat">功能</th><th data-t="cmp_free">免費</th><th class="g">Pro</th></tr></thead>
+      <tbody>
+        <tr><td data-t="r1">偵測並下載網頁影片（MP4 / HLS / DASH）</td><td class="y">✓</td><td class="y">✓</td></tr>
+        <tr><td data-t="r2">字幕提取（SRT / VTT / TXT）</td><td class="y">✓</td><td class="y">✓</td></tr>
+        <tr><td data-t="r3">同時下載</td><td class="v" data-t="r3f">一次 1 部</td><td class="y" data-t="r3p">不限數量</td></tr>
+        <tr><td data-t="r4">最高畫質</td><td class="v" data-t="r4f">480P</td><td class="y" data-t="r4p">不限畫質</td></tr>
+        <tr><td data-t="r5">下載速度</td><td class="v" data-t="r5f">10 分鐘以內不限速；超過 10 分鐘限速 256 KB/s</td><td class="y" data-t="r5p">全速</td></tr>
+        <tr><td data-t="r6">輸出格式</td><td class="v" data-t="r6f">MP4</td><td class="y" data-t="r6p">MP4・MOV・M4A 音訊・WebM 原始格式</td></tr>
+        <tr><td data-t="r7">剪輯影片片段</td><td class="v" data-t="r7f">每日 1 次</td><td class="y" data-t="r7p">不限次數</td></tr>
+        <tr><td data-t="r8">錄製分頁影片</td><td class="v" data-t="r8f">每日 1 次</td><td class="y" data-t="r8p">不限次數</td></tr>
+        <tr><td data-t="r10">標題旁金色 Pro 標誌</td><td class="n">—</td><td class="g">PRO</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="reveal narrow">
+    <h3 class="t" data-t="how_t">購買後怎麼啟用</h3>
+    <p class="lead" data-t="how_lead">付款表單就在這個頁面中，不會另開分頁。</p>
+    <div class="steps">
+      <div class="step"><i>1</i><b data-t="s1">選擇方案並付款</b><p data-t="s1p">信用卡或 PayPal 皆可，付款完成立即生效。</p></div>
+      <div class="step"><i>2</i><b data-t="s2">取得授權碼</b><p data-t="s2p">授權碼會顯示在付款畫面，同時寄到你的信箱。</p></div>
+      <div class="step"><i>3</i><b data-t="s3">貼到插件中</b><p data-t="s3p">打開插件 →「設定」→「升級 Pro」，貼上授權碼即可解鎖。</p></div>
+    </div>
+  </section>
+
+  <section class="reveal narrow" id="manage">
+    <h3 class="t" data-t="mg_t">找回授權碼・管理裝置</h3>
+    <p class="lead" data-t="mg_lead">1 個月方案的授權碼最多可同時在 3 個瀏覽器使用，3 個月與 6 個月方案最多 5 個。換電腦、電腦故障或忘記登出時，你可以自己移除舊裝置，釋放名額。</p>
+    <div class="steps">
+      <div class="step"><i>1</i><b data-t="g1">前往 My Orders</b><p data-t="g1p">點下方按鈕，輸入購買時使用的信箱。</p></div>
+      <div class="step"><i>2</i><b data-t="g2">開啟信中的登入連結</b><p data-t="g2p">Lemon Squeezy 會寄一封登入信給你，不需要密碼。</p></div>
+      <div class="step"><i>3</i><b data-t="g3">查看授權碼與裝置</b><p data-t="g3p">複製授權碼，或在裝置清單中停用不再使用的瀏覽器。</p></div>
+    </div>
+    <div class="center"><a class="btn gold-b inline" href="https://app.lemonsqueezy.com/my-orders" target="_blank" rel="noopener"><span data-t="mg_btn">前往 My Orders</span><span class="arrow">↗</span></a></div>
+  </section>
+
+  <section class="reveal narrow">
+    <h3 class="t" data-t="nt_t">使用須知</h3>
+    <p class="lead"></p>
+    <div class="notice">
+      <div class="ncard warn"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 20h20L12 3z"/><path d="M12 10v4M12 17.5v.01"/></svg></div>
+        <div><b data-t="nt1">請勿濫用或分享授權碼</b><p data-t="nt1p">授權碼僅供購買者本人使用。如發現異常使用（例如大量分享或轉售），我們會先停用該授權碼的權限。</p></div></div>
+      <div class="ncard info"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5l3 2"/></svg></div>
+        <div><b data-t="nt2">僅供合法用途</b><p data-t="nt2p">請只下載你擁有版權或已獲授權的內容，並遵守各網站的使用條款。因使用本軟體所產生的法律責任由使用者自行承擔。</p></div></div>
+      <div class="ncard info"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9.5v5l4.5-2.5z"/></svg></div>
+        <div><b data-t="nt3">部分影片無法下載</b><p data-t="nt3p">網站更改架構，或影片採用 DRM 保護時，可能無法偵測或下載；Chrome 版也因商店政策鎖定 YouTube 下載。</p></div></div>
+    </div>
+  </section>
+
+  <section class="reveal narrow">
+    <h3 class="t" data-t="faq_t">常見問題</h3>
+    <p class="lead"></p>
+    <div class="faq">
+      <div class="qa"><button type="button"><span data-t="q1">免費版有哪些功能？</span><span class="ic"></span></button><div class="body"><div><p data-t="a1">偵測網頁影片、字幕提取，以及基本下載（一次 1 部、最高 480P、MP4；10 分鐘以內的影片不限速，超過 10 分鐘限速 256 KB/s）。另外每天可剪輯 1 次、錄製 1 次。</p></div></div></div>
+      <div class="qa"><button type="button"><span data-t="q2">會自動續約嗎？取消後還能用嗎？</span><span class="ic"></span></button><div class="body"><div><p data-t="a2">1 個月與 1 年方案會在到期時自動續約；你可以隨時取消，取消後不會再扣款，Pro 功能會保留到這一期結束，之後自動回到免費版。永久方案一次付清，不會續約。</p></div></div></div>
+      <div class="qa"><button type="button"><span data-t="q3">可以在幾個瀏覽器使用？</span><span class="ic"></span></button><div class="body"><div><p data-t="a3">1 個月方案最多 3 個瀏覽器、1 年與永久方案最多 5 個瀏覽器（含瀏覽器設定檔）可同時使用。名額用完時，可以到 My Orders 停用舊裝置，或在擴充功能中按「登出這台裝置」。</p></div></div></div>
+      <div class="qa"><button type="button"><span data-t="q4">授權碼弄丟了怎麼辦？</span><span class="ic"></span></button><div class="body"><div><p data-t="a4">授權碼會寄到你付款時填寫的信箱；也可以到 Lemon Squeezy 的 My Orders，用購買信箱登入後查看。</p></div></div></div>
+      <div class="qa"><button type="button"><span data-t="q5">怎麼退訂（取消訂閱）？</span><span class="ic"></span></button><div class="body"><div><p data-t="a5">前往 My Orders，用購買信箱登入，找到這筆訂閱並選擇「取消」；或使用付款收據信中的管理連結。取消後不會再扣款，Pro 保留到當期結束。永久方案沒有訂閱，無需取消。</p></div></div></div>
+      <div class="qa"><button type="button"><span data-t="q6">怎麼移除擴充功能？</span><span class="ic"></span></button><div class="body"><div><p data-t="a6">在瀏覽器的擴充功能管理頁面移除即可。移除前建議先在擴充功能中按「登出這台裝置」，釋放授權名額（移除後我們也會嘗試自動登出）。</p></div></div></div>
+      <div class="qa"><button type="button"><span data-t="q7">為什麼有些影片抓不到？</span><span class="ic"></span></button><div class="body"><div><p data-t="a7">網站改版、串流有 DRM 保護，或影片需要特殊驗證時，可能無法偵測或下載。遇到問題歡迎來信告訴我們。</p></div></div></div>
+      <div class="qa"><button type="button"><span data-t="q8">為什麼 Chrome 版不能下載 YouTube？</span><span class="ic"></span></button><div class="body"><div><p data-t="a8">Chrome 線上應用程式商店不允許下載 YouTube 影片的擴充功能，因此 Chrome 版會鎖定 YouTube 的下載按鈕；Edge 等其他瀏覽器不受影響。</p></div></div></div>
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+      <a href="terms.html" data-t="terms">服務條款</a>
+      <a href="privacy.html" data-t="privacy">隱私權政策</a>
+      <a href="#manage" data-t="mg_short">管理授權碼</a>
+      <a href="mailto:speed132454@gmail.com" data-t="contact">聯絡我們</a>
+    </nav>
+    <div>© <span id="yr"></span> Video Lasso</div>
+    <div class="disc" data-t="disc">本軟體僅供合法用途使用。使用者下載或使用即視為同意：任何因使用本軟體所導致或衍生之法律責任與損害，均由使用者自行承擔，開發者不負任何法律與賠償責任。</div>
+  </footer>
+</div>
+
+<script>
+  const CK = {"m1": "https://hsuyaoting.lemonsqueezy.com/checkout/buy/3b73b0f3-e34a-463f-b48c-c90e66ed91c9?embed=1&logo=0", "y1": "https://hsuyaoting.lemonsqueezy.com/checkout/buy/1242ae70-aac6-4c8b-b4f4-f03f53043fad?embed=1&logo=0", "life": "https://hsuyaoting.lemonsqueezy.com/checkout/buy/6ac10867-027c-44e6-9dc9-247a4dfa5fcd?embed=1&logo=0"};
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // ---------- i18n ----------
+  const EN = {"hero_t": "Upgrade to", "hero_p": "Any quality and format, full speed, several downloads at once — plus unlimited clipping and recording. Detection, subtitles and basic downloads stay free forever.", "pf_soon": "Coming soon", "pf_cur": "(your browser)", "m1_name": "1 Month", "m1_for": "Try it out; cancel any time", "per_m1": "USD / month", "m1_avg": "Billed monthly", "renew_note": "Auto-renews · cancel anytime", "f_all": "All Pro features", "f_cancel": "Keeps working until the paid period ends", "f_dev": "Up to 3 browsers at the same time", "btn_m1": "Choose 1 month", "popular": "Most Popular", "y1_name": "1 Year", "y1_for": "Best if you download often", "per_y1": "USD / year", "y1_avg": "Avg $3.33 / month", "f_save": "About 44% cheaper than monthly", "btn_y1": "Choose 1 year", "best": "Best Value", "life_name": "Lifetime", "life_for": "Pay once, use forever", "per_life": "USD / one-time", "life_avg": "No renewals, no further fees", "norenew_note": "One-time payment · never auto-renews", "f_upd": "All future updates included", "btn_life": "Choose lifetime", "secure": "Payments are handled securely by Lemon Squeezy (cards and PayPal). We never see your payment details.", "pay_back": "Back to plans", "pay_after": "After payment, your license key appears in the checkout and is emailed to you. Open the extension → click PRO (top right) and paste it.", "pay_loading": "Loading secure checkout…", "pay_terms": "By paying you agree to the", "terms": "Terms of Service", "cmp_t": "Free vs Pro", "cmp_lead": "Detection, subtitles and basic downloads are free forever. Pro makes downloading faster and freer.", "cmp_feat": "Feature", "cmp_free": "Free", "r1": "Detect and download web videos (MP4 / HLS / DASH)", "r2": "Subtitle extraction (SRT / VTT / TXT)", "r3": "Simultaneous downloads", "r3f": "1 at a time", "r3p": "Unlimited", "r4": "Max quality", "r4f": "480P", "r4p": "Any quality", "r5": "Download speed", "r5f": "Not throttled up to 10 min; 256 KB/s beyond", "r5p": "Full speed", "r6": "Output formats", "r6f": "MP4", "r6p": "MP4 · MOV · M4A audio · original WebM", "r7": "Clip a segment", "r7f": "1 per day", "r7p": "Unlimited", "r8": "Record a tab", "r8f": "1 per day", "r8p": "Unlimited", "r10": "Gold Pro badge next to the title", "how_t": "How to activate after buying", "how_lead": "The payment form is right on this page; no new tab.", "s1": "Pick a plan and pay", "s1p": "Card or PayPal; it takes effect right away.", "s2": "Get your license key", "s2p": "It appears on the payment screen and is emailed to you.", "s3": "Paste it into the extension", "s3p": "Open Video Lasso → click “Upgrade to Pro” (top right) and paste the key.", "mg_t": "Find your key · manage devices", "mg_lead": "Each key can be used in several browsers at once (3 for the 1-month plan, 5 for 1-year and lifetime). After switching computers, a crash, or forgetting to sign out, you can remove the old device yourself to free the slot.", "g1": "Go to My Orders", "g1p": "Click the button below and enter the email you bought with.", "g2": "Open the sign-in link in the email", "g2p": "Lemon Squeezy emails you a sign-in link; no password needed.", "g3": "See your key and devices", "g3p": "Copy the key, or deactivate browsers you no longer use.", "mg_btn": "Go to My Orders", "nt_t": "Good to know", "nt1": "Please don’t abuse or share your key", "nt1p": "A key is for the buyer only. If we see unusual use (mass sharing or resale), we will first disable that key.", "nt2": "Lawful use only", "nt2p": "Only download content you own or are licensed to copy, and follow each site’s terms. You are solely responsible for any legal consequences of using this software.", "nt3": "Some videos can’t be downloaded", "nt3p": "When a site changes its structure or a video is DRM-protected, it may not be detected or downloadable. The Chrome build also locks YouTube downloads because of store policy.", "faq_t": "FAQ", "q1": "What does the free version include?", "a1": "Video detection, subtitle extraction and basic downloads (1 at a time, up to 480P, MP4; videos up to 10 minutes are not throttled, longer ones are capped at 256 KB/s), plus 1 clip and 1 recording per day.", "q2": "Does it renew automatically? What happens if I cancel?", "a2": "The 1-month and 1-year plans renew automatically. You can cancel any time; you won’t be charged again, Pro stays until the end of the paid period, then returns to free. Lifetime is a one-time payment and never renews.", "q3": "How many browsers can I use it on?", "a3": "Up to 3 browsers (1-month plan) or 5 browsers (1-year and lifetime), including browser profiles, at the same time. When the slots are full, deactivate an old device in My Orders, or use “Sign out this device” in the extension.", "q4": "I lost my license key.", "a4": "It was emailed to the address you paid with, and you can always see it again in Lemon Squeezy My Orders after signing in with that email.", "q5": "How do I cancel my subscription?", "a5": "Go to My Orders, sign in with your purchase email, find the subscription and choose “Cancel”, or use the manage link in your receipt email. You won’t be charged again and Pro stays until the period ends. Lifetime has no subscription to cancel.", "q6": "How do I remove the extension?", "a6": "Remove it from your browser’s extensions page. Before removing, press “Sign out this device” in the extension to free the license slot (we also try to do this automatically after removal).", "q7": "Why can’t some videos be found?", "a7": "Site changes, DRM-protected streams or videos that need special verification may not be detected or downloadable. Email us if you run into a problem.", "q8": "Why can’t the Chrome build download YouTube?", "a8": "The Chrome Web Store does not allow extensions that download YouTube videos, so the Chrome build locks the YouTube download button. Edge and other browsers are not affected.", "mg_short": "Manage license", "contact": "Contact", "disc": "This software is for lawful use only. By downloading or using it you agree that any legal liability or damage arising from its use is borne solely by you, and the developer accepts no legal or compensatory responsibility.", "f_dev3": "Up to 3 browsers at the same time", "f_dev5": "Up to 5 browsers at the same time", "privacy": "Privacy Policy"}, CN = {"hero_t": "升级到", "hero_p": "不限画质与格式、全速下载、同时下载多部，并可无限剪辑与录制。检测、字幕提取与基本下载永远免费。", "pf_soon": "即将上架", "pf_cur": "（当前浏览器）", "m1_name": "1 个月", "m1_for": "先试试看，随时可以取消", "per_m1": "USD / 每月", "m1_avg": "按月计费", "renew_note": "自动续约・可随时取消", "f_all": "所有 Pro 功能", "f_cancel": "取消后仍可用到当期结束", "f_dev": "最多 3 个浏览器同时使用", "btn_m1": "选择 1 个月", "popular": "最受欢迎", "y1_name": "1 年", "y1_for": "常常下载视频，长期使用更划算", "per_y1": "USD / 每年", "y1_avg": "平均 $3.33 / 月", "f_save": "比月缴省约 44%", "btn_y1": "选择 1 年", "best": "最划算", "life_name": "永久", "life_for": "买一次，永久使用", "per_life": "USD / 一次付清", "life_avg": "不用续约，没有后续费用", "norenew_note": "一次付清・不会自动续约", "f_upd": "包含后续所有更新", "btn_life": "选择永久方案", "secure": "付款由 Lemon Squeezy 安全处理，支持信用卡与 PayPal。我们不会取得你的付款信息。", "pay_back": "返回选择方案", "pay_after": "付款完成后，授权码会显示在结帐页并寄到你的信箱。打开扩展程序 → 点右上角 PRO，粘贴即可。", "pay_loading": "正在加载安全结帐页面…", "pay_terms": "付款即表示你同意", "terms": "服务条款", "cmp_t": "免费版与 Pro 比较", "cmp_lead": "检测、字幕提取与基本下载永远免费；Pro 让你下载更快、更自由。", "cmp_feat": "功能", "cmp_free": "免费", "r1": "检测并下载网页视频（MP4 / HLS / DASH）", "r2": "字幕提取（SRT / VTT / TXT）", "r3": "同时下载", "r3f": "一次 1 部", "r3p": "不限数量", "r4": "最高清", "r4f": "480P", "r4p": "不限画质", "r5": "下载速度", "r5f": "10 分钟以内不限速；超过 10 分钟限速 256 KB/s", "r5p": "全速", "r6": "输出格式", "r6f": "MP4", "r6p": "MP4・MOV・M4A 音频・WebM 原始格式", "r7": "剪辑视频片段", "r7f": "每日 1 次", "r7p": "不限次数", "r8": "录制标签页视频", "r8f": "每日 1 次", "r8p": "不限次数", "r10": "标题旁金色 Pro 标志", "how_t": "购买后怎么激活", "how_lead": "付款表单就在这个页面中，不会另开分页。", "s1": "选择方案并付款", "s1p": "信用卡或 PayPal 皆可，付款完成立即生效。", "s2": "取得授权码", "s2p": "授权码会显示在付款画面，同时寄到你的信箱。", "s3": "贴到扩展程序中", "s3p": "打开 Video Lasso → 点右上角「升级 Pro」，粘贴授权码即可解锁。", "mg_t": "找回授权码・管理设备", "mg_lead": "每组授权码可同时在多个浏览器使用（1 个月方案 3 个、1 年与永久方案 5 个）。换电脑、电脑故障或忘记退出时，你可以自己移除旧设备，释放名额。", "g1": "前往 My Orders", "g1p": "点下方按钮，输入购买时使用的信箱。", "g2": "打开信中的登录链接", "g2p": "Lemon Squeezy 会寄一封登录信给你，不需要密码。", "g3": "查看授权码与设备", "g3p": "拷贝授权码，或在设备清单中停用不再使用的浏览器。", "mg_btn": "前往 My Orders", "nt_t": "使用须知", "nt1": "请勿滥用或分享授权码", "nt1p": "授权码仅供购买者本人使用。如发现异常使用（例如大量分享或转售），我们会先停用该授权码的权限。", "nt2": "仅供合法用途", "nt2p": "请只下载你拥有版权或已获授权的内容，并遵守各网站的使用条款。因使用本软件所产生的法律责任由用户自行承担。", "nt3": "部分视频无法下载", "nt3p": "网站更改架构，或视频采用 DRM 保护时，可能无法检测或下载；Chrome 版也因商店政策锁定 YouTube 下载。", "faq_t": "常见问题", "q1": "免费版有哪些功能？", "a1": "检测网页视频、字幕提取，以及基本下载（一次 1 部、最高 480P、MP4；10 分钟以内的视频不限速，超过 10 分钟限速 256 KB/s）。另外每天可剪辑 1 次、录制 1 次。", "q2": "会自动续约吗？取消后还能用吗？", "a2": "1 个月与 1 年方案会在到期时自动续约；你可以随时取消，取消后不会再扣款，Pro 功能会保留到这一期结束，之后自动回到免费版。永久方案一次付清，不会续约。", "q3": "可以在几个浏览器使用？", "a3": "1 个月方案最多 3 个浏览器、1 年与永久方案最多 5 个浏览器（含浏览器设置档）可同时使用。名额用完时，可以到 My Orders 停用旧设备，或在扩展程序中按「退出这台设备」。", "q4": "授权码弄丢了怎么办？", "a4": "授权码会寄到你付款时填写的信箱；也可以到 Lemon Squeezy 的 My Orders，用购买信箱登录后查看。", "q5": "怎么退订（取消订阅）？", "a5": "前往 My Orders，用购买信箱登录，找到这笔订阅并选择「取消」；或使用付款收据信中的管理链接。取消后不会再扣款，Pro 保留到当期结束。永久方案没有订阅，无需取消。", "q6": "怎么移除扩展程序？", "a6": "在浏览器的扩展程序管理页面移除即可。移除前建议先在扩展程序中按「退出这台设备」，释放授权名额（移除后我们也会尝试自动退出）。", "q7": "为什么有些视频抓不到？", "a7": "网站改版、串流有 DRM 保护，或视频需要特殊验证时，可能无法检测或下载。遇到问题欢迎来信告诉我们。", "q8": "为什么 Chrome 版不能下载 YouTube？", "a8": "Chrome 在线应用程序商店不允许下载 YouTube 视频的扩展程序，因此 Chrome 版会锁定 YouTube 的下载按钮；Edge 等其他浏览器不受影响。", "mg_short": "管理授权码", "contact": "联系我们", "disc": "本软件仅供合法用途使用。用户下载或使用即视为同意：任何因使用本软件所导致或衍生之法律责任与损害，均由用户自行承担，开发者不负任何法律与赔偿责任。", "f_dev3": "最多 3 个浏览器同时使用", "f_dev5": "最多 5 个浏览器同时使用", "privacy": "隐私政策"}, ZH = {};
+  document.querySelectorAll('[data-t]').forEach(el => { if (!(el.dataset.t in ZH)) ZH[el.dataset.t] = el.textContent; });
+  Object.assign(ZH, {"hero_t": "升級到", "hero_p": "不限畫質與格式、全速下載、同時下載多部，並可無限剪輯與錄製。偵測、字幕提取與基本下載永遠免費。", "pf_soon": "即將上架", "pf_cur": "（當前瀏覽器）", "m1_name": "1 個月", "m1_for": "先試試看，隨時可以取消", "per_m1": "USD / 每月", "m1_avg": "按月計費", "renew_note": "自動續約・可隨時取消", "f_all": "所有 Pro 功能", "f_cancel": "取消後仍可用到當期結束", "f_dev": "最多 3 個瀏覽器同時使用", "btn_m1": "選擇 1 個月", "popular": "最受歡迎", "y1_name": "1 年", "y1_for": "常常下載影片，長期使用更划算", "per_y1": "USD / 每年", "y1_avg": "平均 $3.33 / 月", "f_save": "比月繳省約 44%", "btn_y1": "選擇 1 年", "best": "最划算", "life_name": "永久", "life_for": "買一次，永久使用", "per_life": "USD / 一次付清", "life_avg": "不用續約，沒有後續費用", "norenew_note": "一次付清・不會自動續約", "f_upd": "包含後續所有更新", "btn_life": "選擇永久方案", "secure": "付款由 Lemon Squeezy 安全處理，支援信用卡與 PayPal。我們不會取得你的付款資訊。", "pay_back": "返回選擇方案", "pay_after": "付款完成後，授權碼會顯示在結帳頁並寄到你的信箱。打開擴充功能 → 點右上角 PRO，貼上即可。", "pay_loading": "正在載入安全結帳頁面…", "pay_terms": "付款即表示你同意", "terms": "服務條款", "cmp_t": "免費版與 Pro 比較", "cmp_lead": "偵測、字幕提取與基本下載永遠免費；Pro 讓你下載更快、更自由。", "cmp_feat": "功能", "cmp_free": "免費", "r1": "偵測並下載網頁影片（MP4 / HLS / DASH）", "r2": "字幕提取（SRT / VTT / TXT）", "r3": "同時下載", "r3f": "一次 1 部", "r3p": "不限數量", "r4": "最高畫質", "r4f": "480P", "r4p": "不限畫質", "r5": "下載速度", "r5f": "10 分鐘以內不限速；超過 10 分鐘限速 256 KB/s", "r5p": "全速", "r6": "輸出格式", "r6f": "MP4", "r6p": "MP4・MOV・M4A 音訊・WebM 原始格式", "r7": "剪輯影片片段", "r7f": "每日 1 次", "r7p": "不限次數", "r8": "錄製分頁影片", "r8f": "每日 1 次", "r8p": "不限次數", "r10": "標題旁金色 Pro 標誌", "how_t": "購買後怎麼啟用", "how_lead": "付款表單就在這個頁面中，不會另開分頁。", "s1": "選擇方案並付款", "s1p": "信用卡或 PayPal 皆可，付款完成立即生效。", "s2": "取得授權碼", "s2p": "授權碼會顯示在付款畫面，同時寄到你的信箱。", "s3": "貼到擴充功能中", "s3p": "打開 Video Lasso → 點右上角「升級 Pro」，貼上授權碼即可解鎖。", "mg_t": "找回授權碼・管理裝置", "mg_lead": "每組授權碼可同時在多個瀏覽器使用（1 個月方案 3 個、1 年與永久方案 5 個）。換電腦、電腦故障或忘記登出時，你可以自己移除舊裝置，釋放名額。", "g1": "前往 My Orders", "g1p": "點下方按鈕，輸入購買時使用的信箱。", "g2": "開啟信中的登入連結", "g2p": "Lemon Squeezy 會寄一封登入信給你，不需要密碼。", "g3": "查看授權碼與裝置", "g3p": "複製授權碼，或在裝置清單中停用不再使用的瀏覽器。", "mg_btn": "前往 My Orders", "nt_t": "使用須知", "nt1": "請勿濫用或分享授權碼", "nt1p": "授權碼僅供購買者本人使用。如發現異常使用（例如大量分享或轉售），我們會先停用該授權碼的權限。", "nt2": "僅供合法用途", "nt2p": "請只下載你擁有版權或已獲授權的內容，並遵守各網站的使用條款。因使用本軟體所產生的法律責任由使用者自行承擔。", "nt3": "部分影片無法下載", "nt3p": "網站更改架構，或影片採用 DRM 保護時，可能無法偵測或下載；Chrome 版也因商店政策鎖定 YouTube 下載。", "faq_t": "常見問題", "q1": "免費版有哪些功能？", "a1": "偵測網頁影片、字幕提取，以及基本下載（一次 1 部、最高 480P、MP4；10 分鐘以內的影片不限速，超過 10 分鐘限速 256 KB/s）。另外每天可剪輯 1 次、錄製 1 次。", "q2": "會自動續約嗎？取消後還能用嗎？", "a2": "1 個月與 1 年方案會在到期時自動續約；你可以隨時取消，取消後不會再扣款，Pro 功能會保留到這一期結束，之後自動回到免費版。永久方案一次付清，不會續約。", "q3": "可以在幾個瀏覽器使用？", "a3": "1 個月方案最多 3 個瀏覽器、1 年與永久方案最多 5 個瀏覽器（含瀏覽器設定檔）可同時使用。名額用完時，可以到 My Orders 停用舊裝置，或在擴充功能中按「登出這台裝置」。", "q4": "授權碼弄丟了怎麼辦？", "a4": "授權碼會寄到你付款時填寫的信箱；也可以到 Lemon Squeezy 的 My Orders，用購買信箱登入後查看。", "q5": "怎麼退訂（取消訂閱）？", "a5": "前往 My Orders，用購買信箱登入，找到這筆訂閱並選擇「取消」；或使用付款收據信中的管理連結。取消後不會再扣款，Pro 保留到當期結束。永久方案沒有訂閱，無需取消。", "q6": "怎麼移除擴充功能？", "a6": "在瀏覽器的擴充功能管理頁面移除即可。移除前建議先在擴充功能中按「登出這台裝置」，釋放授權名額（移除後我們也會嘗試自動登出）。", "q7": "為什麼有些影片抓不到？", "a7": "網站改版、串流有 DRM 保護，或影片需要特殊驗證時，可能無法偵測或下載。遇到問題歡迎來信告訴我們。", "q8": "為什麼 Chrome 版不能下載 YouTube？", "a8": "Chrome 線上應用程式商店不允許下載 YouTube 影片的擴充功能，因此 Chrome 版會鎖定 YouTube 的下載按鈕；Edge 等其他瀏覽器不受影響。", "mg_short": "管理授權碼", "contact": "聯絡我們", "disc": "本軟體僅供合法用途使用。使用者下載或使用即視為同意：任何因使用本軟體所導致或衍生之法律責任與損害，均由使用者自行承擔，開發者不負任何法律與賠償責任。", "f_dev3": "最多 3 個瀏覽器同時使用", "f_dev5": "最多 5 個瀏覽器同時使用", "privacy": "隱私權政策"});
+  let LANG = 'zh';
+  const T = k => (LANG === 'en' ? EN : LANG === 'cn' ? CN : ZH)[k] || ZH[k] || '';
+  const pill = document.querySelector('.lang .pill');
+  function movePill(instant) {
+    const on = document.querySelector('.lang button.on'); if (!on) return;
+    if (instant) pill.style.transition = 'none';
+    pill.style.width = on.offsetWidth + 'px';
+    pill.style.transform = `translateX(${on.offsetLeft}px)`;
+    if (instant) { void pill.offsetWidth; pill.style.transition = ''; }
+  }
+  function setLang(l, instant) {
+    LANG = l;
+    document.querySelectorAll('[data-t]').forEach(el => { const v = T(el.dataset.t); if (v) el.textContent = v; });
+    document.documentElement.lang = l === 'en' ? 'en' : (l === 'cn' ? 'zh-CN' : 'zh-TW');
+    document.querySelectorAll('.lang button').forEach(b => b.classList.toggle('on', b.dataset.lang === l));
+    movePill(instant);
+    if (typeof cur !== 'undefined' && cur) fillSum(cur);
+    try { localStorage.setItem('lang', l); } catch (e) {}
+  }
+  document.querySelectorAll('.lang button').forEach(b => b.onclick = () => setLang(b.dataset.lang));
+
+  // ---------- which browser is this? (Edge also says "Chrome" in its user agent) ----------
+  { const ua = navigator.userAgent; const b = /Edg\//.test(ua) ? 'edge' : /Firefox\//.test(ua) ? 'firefox' : /Chrome\//.test(ua) && !/OPR\//.test(ua) ? 'chrome' : '';
+    const el = b && document.querySelector(`.pfw[data-b="${b}"]`); if (el) el.classList.add('me'); }
+
+  // ---------- big logo: tilt + click pop ----------
+  const stage = document.getElementById('logoStage'), tilt = stage.querySelector('.tilt');
+  stage.addEventListener('pointermove', e => {
+    const r = stage.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+    tilt.style.transform = `rotateX(${-y * 26}deg) rotateY(${x * 30}deg) scale(1.06)`;
+  });
+  stage.addEventListener('pointerleave', () => { tilt.style.transform = ''; });
+  stage.addEventListener('click', () => { stage.classList.remove('pop'); void stage.offsetWidth; stage.classList.add('pop'); });
+
+  // ---------- plan cards: spotlight + tilt + crown ----------
+  const fine = matchMedia('(hover: hover) and (pointer: fine)').matches;
+  document.querySelectorAll('.plan').forEach(card => {
+    const crown = card.querySelector('.crown');
+    card.addEventListener('pointermove', e => {
+      const r = card.getBoundingClientRect(), x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
+      card.style.setProperty('--mx', (x * 100) + '%'); card.style.setProperty('--my', (y * 100) + '%');
+      if (fine) card.style.transform = `translateY(-6px) rotateX(${(0.5 - y) * 6}deg) rotateY(${(x - 0.5) * 8}deg)`;
+      if (crown) crown.style.transform = `translateY(-6px) rotate(${(x - 0.5) * 30}deg) scale(1.12)`;
+    });
+    card.addEventListener('pointerleave', () => { card.style.transform = ''; if (crown) crown.style.transform = ''; });
+    card.addEventListener('click', () => openPay(card.dataset.plan));
+    card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openPay(card.dataset.plan); } });
+  });
+
+  // ---------- checkout (inline, no overlay) ----------
+  const vPlans = document.getElementById('vPlans'), vPay = document.getElementById('vPay'), plansEl = document.getElementById('plans');
+  const box = document.getElementById('checkout'), loadEl = document.getElementById('payLoading');
+  const frames = {}, loaded = {};
+  let cur = null, busy = false;
+  function frame(plan) {
+    if (frames[plan]) return frames[plan];
+    const f = document.createElement('iframe');
+    f.src = CK[plan]; f.title = 'Checkout'; f.setAttribute('scrolling', 'no'); f.hidden = true;
+    f.allow = 'payment *; clipboard-write'; f.loading = 'eager';
+    f.addEventListener('load', () => { loaded[plan] = true; if (cur === plan) loadEl.classList.add('done'); });
+    box.appendChild(f); frames[plan] = f; return f;
+  }
+  function fillSum(plan) {
+    const card = document.querySelector(`.plan[data-plan="${plan}"]`);
+    document.getElementById('payName').textContent = card.querySelector('h2').textContent;
+    document.getElementById('payPrice').textContent = card.querySelector('.price b').textContent;
+    document.getElementById('paySum').className = 'paysum' + (plan === 'y1' ? ' silver' : plan === 'life' ? ' gold' : '');
+  }
+  function openPay(plan, fromHistory) {
+    if (busy || cur === plan) return; busy = true;
+    const card = document.querySelector(`.plan[data-plan="${plan}"]`);
+    card.classList.add('launch');
+    cur = plan; fillSum(plan);
+    Object.entries(frames).forEach(([k, f]) => f.hidden = k !== plan);
+    frame(plan).hidden = false;
+    loadEl.classList.toggle('done', !!loaded[plan]);
+    if (!fromHistory) history.pushState({ pay: plan }, '', '#' + plan);
+    plansEl.classList.add('leaving');
+    setTimeout(() => {
+      card.classList.remove('launch'); plansEl.classList.remove('leaving');
+      vPlans.hidden = true; document.body.classList.add('paying');
+      vPay.hidden = false; vPay.classList.remove('leaving'); vPay.classList.add('entering');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      setTimeout(() => { vPay.classList.remove('entering'); busy = false; }, 600);
+    }, 380);
+  }
+  function closePay(fromHistory) {
+    if (!cur || busy) return; busy = true;
+    if (!fromHistory && history.state && history.state.pay) { history.back(); busy = false; return; }
+    vPay.classList.add('leaving');
+    setTimeout(() => {
+      vPay.hidden = true; vPay.classList.remove('leaving'); document.body.classList.remove('paying');
+      vPlans.hidden = false; plansEl.classList.add('entering'); cur = null;
+      if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+      plansEl.scrollIntoView({ block: 'center' });
+      setTimeout(() => { plansEl.classList.remove('entering'); busy = false; }, 700);
+    }, 320);
+  }
+  document.getElementById('payBack').onclick = () => closePay();
+
+  // ---------- switch plan from the checkout page ----------
+  const sumBtn = document.getElementById('paySum'), menu = document.getElementById('planMenu');
+  function buildMenu() {
+    menu.replaceChildren();
+    document.querySelectorAll('.plan').forEach((card) => {
+      const p = card.dataset.plan, b = document.createElement('button');
+      b.type = 'button'; b.dataset.plan = p; b.setAttribute('role', 'option'); b.className = p === cur ? 'on' : '';
+      const badge = card.querySelector('.badge');
+      b.innerHTML = '<span class="pn"></span><span class="pp"></span><span class="pa"></span>';
+      b.querySelector('.pn').textContent = card.querySelector('h2').textContent;
+      if (badge) { const t = document.createElement('span'); t.className = 'tag' + (p === 'life' ? ' gold' : ''); t.textContent = badge.textContent; b.querySelector('.pn').append(t); }
+      b.querySelector('.pp').textContent = card.querySelector('.price b').textContent;
+      b.querySelector('.pa').textContent = card.querySelector('.avg').textContent;
+      b.onclick = () => { closeMenu(); switchPlan(p); };
+      menu.append(b);
+    });
+  }
+  function openMenu() { buildMenu(); menu.classList.add('open'); sumBtn.setAttribute('aria-expanded', 'true'); }
+  function closeMenu() { menu.classList.remove('open'); sumBtn.setAttribute('aria-expanded', 'false'); }
+  sumBtn.onclick = (e) => { e.stopPropagation(); menu.classList.contains('open') ? closeMenu() : openMenu(); };
+  document.addEventListener('click', (e) => { if (!menu.contains(e.target)) closeMenu(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMenu(); });
+  function switchPlan(plan) {
+    if (!cur || plan === cur || !CK[plan]) return;
+    cur = plan; fillSum(plan);
+    Object.entries(frames).forEach(([k, f]) => f.hidden = k !== plan);
+    frame(plan).hidden = false;
+    loadEl.classList.toggle('done', !!loaded[plan]);
+    history.replaceState({ pay: plan }, '', '#' + plan);
+    box.classList.remove('swap'); void box.offsetWidth; box.classList.add('swap');
+  }
+  addEventListener('popstate', e => {
+    const p = e.state && e.state.pay;
+    if (p && CK[p]) { if (cur) { cur = null; } openPay(p, true); } else if (cur) closePay(true);
+  });
+  // warm up the checkout for the plan the visitor is pointing at
+  document.querySelectorAll('.plan').forEach(card => {
+    const warm = () => frame(card.dataset.plan);
+    card.addEventListener('pointerenter', warm, { once: true });
+    card.addEventListener('focus', warm, { once: true });
+  });
+  document.getElementById('homeLink').onclick = e => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); };
+
+  // ---------- FAQ ----------
+  document.querySelectorAll('.qa > button').forEach(b => b.onclick = () => b.parentElement.classList.toggle('open'));
+
+  // ---------- reveal ----------
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .1 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // ---------- start ----------
+  let start = new URLSearchParams(location.search).get('lang');
+  if (!start) { try { start = localStorage.getItem('lang'); } catch (e) {} }
+  if (!start) {
+    const nav = ((navigator.languages && navigator.languages[0]) || navigator.language || 'en').toLowerCase();
+    start = /^zh/.test(nav) ? (/(cn|sg|hans)/.test(nav) ? 'cn' : 'zh') : 'en';
+  }
+  setLang(['zh', 'cn', 'en'].includes(start) ? start : 'en', true);
+  addEventListener('resize', () => movePill(true));
+  { const h = location.hash.slice(1); if (CK[h]) { history.replaceState({ pay: h }, '', '#' + h); openPay(h, true); } }
+  if (document.fonts) document.fonts.ready.then(() => movePill(true));
+</script>
+</body>
+</html>
