@@ -27,6 +27,8 @@ document.documentElement.setAttribute('data-theme',t)})()</script>
   .home svg { width: 34px; height: 34px; transition: transform .45s var(--spring); }
   .home:hover svg { transform: rotate(-8deg) scale(1.08); }
   .home b { font-size: 15px; }
+  .navlink { color: var(--sub); text-decoration: none; font-weight: 700; font-size: 14px; padding: 6px 12px; border-radius: 10px; }
+  .navlink:hover { color: var(--text); background: rgba(var(--fg),.06); }
   .sp { flex: 1; }
   .lang { position: relative; display: flex; background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 3px; }
   .lang .pill { position: absolute; top: 3px; bottom: 3px; left: 0; width: 0; border-radius: 16px; background: var(--card2);
@@ -66,25 +68,40 @@ document.documentElement.setAttribute('data-theme',t)})()</script>
   html.theme-anim, html.theme-anim *, html.theme-anim *::before, html.theme-anim *::after {
     transition-property: background-color, color, border-color, fill, stroke, box-shadow, text-shadow !important;
     transition-duration: .45s !important; transition-timing-function: ease !important; transition-delay: 0s !important; }
+
+  /* sticky top bar (shared with features page) */
+  body { overflow-x: clip; }
+  .top { position: sticky; top: 0; z-index: 40; padding: 12px 0 !important; }
+  .top::before { content: ""; position: absolute; top: 0; bottom: 0; left: 50%; width: 100vw; transform: translateX(-50%); z-index: -1; pointer-events: none;
+    backdrop-filter: saturate(1.6) blur(16px); -webkit-backdrop-filter: saturate(1.6) blur(16px); background: transparent; border-bottom: 1px solid transparent; transition: background .3s, border-color .3s; }
+  .top.stuck::before { background: color-mix(in srgb, var(--bg) 78%, transparent); border-bottom-color: var(--line); }
+  .nav { display: flex; gap: 4px; margin-left: 10px; }
+  .nav a { text-decoration: none; font-size: 13.5px; font-weight: 600; color: var(--sub); padding: 6px 12px; border-radius: 16px; transition: color .2s, background .2s; white-space: nowrap; }
+  .nav a:hover { color: var(--text); background: rgba(var(--fg),.06); }
+  .nav a.on { color: var(--text); background: rgba(var(--fg),.08); }
+  @media (max-width: 640px) { .home b { display: none; } .nav { margin-left: 0; } .nav a { padding: 6px 8px; font-size: 12.5px; } .lang button { padding: 5px 8px; } .top { gap: 6px; } }
 </style>
 </head>
 <body>
 <div class="wrap">
   <div class="top">
     <a class="home" href="./"><svg viewBox="10.5 8 112.5 112.5"> <defs> <clipPath id="ups"><rect x="-20" y="-40" width="180" height="106"/></clipPath> <clipPath id="dns"><rect x="-20" y="62" width="180" height="100"/></clipPath> <mask id="ms" maskUnits="userSpaceOnUse" x="0" y="0" width="128" height="128"><rect width="128" height="128" fill="#fff"/><rect x="28.8" y="38.2" width="9.1" height="6.5" rx="1.5" fill="#000"/><rect x="28.8" y="83.3" width="9.1" height="6.5" rx="1.5" fill="#000"/><rect x="45.8" y="38.2" width="9.1" height="6.5" rx="1.5" fill="#000"/><rect x="45.8" y="83.3" width="9.1" height="6.5" rx="1.5" fill="#000"/><rect x="73.1" y="38.2" width="9.1" height="6.5" rx="1.5" fill="#000"/><rect x="73.1" y="83.3" width="9.1" height="6.5" rx="1.5" fill="#000"/><rect x="90.1" y="38.2" width="9.1" height="6.5" rx="1.5" fill="#000"/><rect x="90.1" y="83.3" width="9.1" height="6.5" rx="1.5" fill="#000"/><path d="M54.9 51.0 L54.9 77.0 L79.6 64 Z" fill="#000" stroke="#000" stroke-width="5.2" stroke-linejoin="round"/></mask> </defs> <g transform="rotate(-24 64 64)"><ellipse cx="64" cy="64" rx="50" ry="31" fill="none" stroke="#F2A900" stroke-width="8" clip-path="url(#ups)"/></g> <g transform="rotate(-8 64 64)"><rect x="21.0" y="33.0" width="86" height="62" rx="10.4" fill="currentColor" mask="url(#ms)"/></g> <g transform="rotate(-24 64 64)"><ellipse cx="64" cy="64" rx="50" ry="31" fill="none" stroke="#FFC83D" stroke-width="8" clip-path="url(#dns)"/><rect x="105" y="56" width="17" height="16" rx="5.5" fill="#FFB000" stroke="#B87400" stroke-width="2"/></g> <path d="M109 44 C122 52 119 72 104 80" fill="none" stroke="#FFC83D" stroke-width="7" stroke-linecap="round"/> </svg><b>Video Lasso</b></a>
+    <nav class="nav"><a href="features.html" id="navF">功能介紹</a><a href="./" id="navP">方案與購買</a></nav>
     <span class="sp"></span>
     <button class="theme-btn" type="button" title="Light / Dark · 淺色 / 深色" aria-label="Theme"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/></svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z"/></svg></button>
     <div class="lang"><span class="pill"></span><button data-lang="zh">繁中</button><button data-lang="cn">简中</button><button data-lang="en">EN</button><button data-lang="ja">日本語</button></div>
   </div>
   <a class="back" href="./" id="backLink">← <span id="backText">返回方案頁</span></a>
   <article id="doc"><p style="color:var(--sub)">Loading…</p></article>
-  <footer><div style="margin-bottom:6px"><a href="terms.html" id="fTerms">Terms</a> · <a href="privacy.html" id="fPriv">Privacy</a></div>© <span id="yr"></span> Video Lasso by Hsu Yao Ting</footer>
+  <footer><div style="margin-bottom:6px"><a href="features.html" id="fFeat">Features</a> · <a href="terms.html" id="fTerms">Terms</a> · <a href="privacy.html" id="fPriv">Privacy</a></div>© <span id="yr"></span> Video Lasso by Hsu Yao Ting</footer>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
 <script>
   document.getElementById('yr').textContent = new Date().getFullYear();
   const FILES = { zh: 'terms/privacy.zh-TW.md', cn: 'terms/privacy.zh-CN.md', en: 'terms/privacy.en.md', ja: 'terms/privacy.ja.md' };
   const BACK = { zh: '返回方案頁', cn: '返回方案页', en: 'Back to plans', ja: 'プラン選択に戻る' };
+  const NP = { zh: '方案與購買', cn: '方案与购买', en: 'Plans & Pricing', ja: 'プランと購入' };
+  const NF = { zh: '功能介紹', cn: '功能介绍', en: 'Features', ja: '機能紹介' };
   const FT = { zh: '服務條款', cn: '服务条款', en: 'Terms of Service', ja: '利用規約' }, FP = { zh: '隱私權政策', cn: '隐私政策', en: 'Privacy Policy', ja: 'プライバシーポリシー' };
   const doc = document.getElementById('doc'), pill = document.querySelector('.lang .pill');
   function movePill(instant) {
@@ -97,7 +114,7 @@ document.documentElement.setAttribute('data-theme',t)})()</script>
     document.querySelectorAll('.lang button').forEach(b => b.classList.toggle('on', b.dataset.lang === l));
     document.documentElement.lang = ({ en: 'en', cn: 'zh-CN', ja: 'ja' })[l] || 'zh-TW';
     document.getElementById('backText').textContent = BACK[l];
-    document.getElementById('fTerms').textContent = FT[l]; document.getElementById('fPriv').textContent = FP[l];
+    document.getElementById('navF').textContent = NF[l]; document.getElementById('navP').textContent = NP[l]; document.getElementById('fFeat').textContent = NF[l]; document.getElementById('fTerms').textContent = FT[l]; document.getElementById('fPriv').textContent = FP[l];
     document.querySelectorAll('footer a').forEach(a => a.href = a.getAttribute('href').split('?')[0] + '?lang=' + l);
     movePill(instant);
     try { localStorage.setItem('lang', l); } catch (e) {}
@@ -124,5 +141,6 @@ if(mq.addEventListener)mq.addEventListener('change',function(){if(!saved())set(m
 document.querySelectorAll('.theme-btn').forEach(function(b){b.onclick=function(){var n=r.getAttribute('data-theme')==='light'?'dark':'light';set(n);try{localStorage.setItem('theme',n)}catch(e){}}});
 addEventListener('storage',function(e){if(e.key==='theme'&&(e.newValue==='light'||e.newValue==='dark'))set(e.newValue)});})();
 </script>
+<script>(function(){var t=document.querySelector('.top');function f(){t.classList.toggle('stuck',scrollY>8)}addEventListener('scroll',f,{passive:true});f()})();</script>
 </body>
 </html>

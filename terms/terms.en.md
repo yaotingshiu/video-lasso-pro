@@ -1,5 +1,7 @@
 # Terms of Service
 
+> This English version is a courtesy translation. If it differs from the Traditional Chinese version, the Traditional Chinese version prevails.
+
 Last updated: 12 October 2026
 
 Welcome to **Video Lasso** ("the Tool"). The Tool is a browser extension developed and maintained by an individual developer, Hsu Yao Ting ("the Developer", "we"). By installing, activating or using the Tool, or by buying a Pro plan, you confirm that you have read, understood and agreed to these Terms. If you do not agree, do not install or use the Tool. How personal data is handled is described in the separate [Privacy Policy](privacy.html).
@@ -22,7 +24,7 @@ Welcome to **Video Lasso** ("the Tool"). The Tool is a browser extension develop
 | Output formats | MP4 | MP4, MOV, M4A (audio only), original WebM, etc. |
 | Simultaneous downloads | 1 at a time | Unlimited |
 | Download speed | Videos up to 10 minutes: not throttled. Videos over 10 minutes: capped at 256 KB/s | Not throttled |
-| Clipping | 8 per day | Unlimited |
+| Clipping | 3 per day | Unlimited |
 | Tab recording | 8 per day | Unlimited |
 
 1. The table reflects these Terms at the time of writing. Features and limits may change with updates; the description in the extension and on the official website at the time prevails.

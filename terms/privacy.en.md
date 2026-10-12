@@ -1,5 +1,7 @@
 # Privacy Policy
 
+> This English version is a courtesy translation. If it differs from the Traditional Chinese version, the Traditional Chinese version prevails.
+
 Last updated: 12 October 2026
 
 This policy explains how **Video Lasso** ("the Tool") and its official website handle data. The Tool is developed and maintained by an individual developer, Hsu Yao Ting ("the Developer", "we"). We process personal data in accordance with the laws of the Republic of China (Taiwan), including the Personal Data Protection Act ("PDPA"). By using the Tool you acknowledge this policy; terms of use are in the [Terms of Service](terms.html).
