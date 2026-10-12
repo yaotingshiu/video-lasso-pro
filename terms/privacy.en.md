@@ -26,6 +26,7 @@ The following stays in your browser (`chrome.storage` and IndexedDB) and cannot 
 | Download progress and the last 200 download records (title, thumbnail, source page address, file name, size, time) | Show "Active" and "History" | storage.local; can be deleted in the extension |
 | Access to the save folder you chose (folder handle) | Save files where you asked | IndexedDB |
 | Today's clip and recording counts | Apply the free plan's daily limits | storage.local and storage.sync |
+| Premium-download credit counter (credits left, next refill time) | Apply the free plan's premium-download credits | storage.local and storage.sync |
 | Pro licence information (key, plan, expiry, e-mail, device name, devices in use, last verification time) | Activate and keep Pro working | storage.local |
 
 Notes:
