@@ -2,11 +2,15 @@
 
 > This English version is a courtesy translation. If it differs from the Traditional Chinese version, the Traditional Chinese version prevails.
 
-Last updated: 12 October 2026
+Last updated: 14 October 2026
 
 This policy explains how **Video Lasso** ("the Tool") and its official website handle data. The Tool is developed and maintained by an individual developer, Hsu Yao Ting ("the Developer", "we"). We process personal data in accordance with the laws of the Republic of China (Taiwan), including the Personal Data Protection Act ("PDPA"). By using the Tool you acknowledge this policy; terms of use are in the [Terms of Service](terms.html).
 
 **In short:** the Tool works inside your browser. There are no accounts and no analytics, and we do not run a server that receives your browsing history or video content. The only party the Tool talks to about you is the payment platform Lemon Squeezy, and only when you activate a Pro licence key.
+
+> **Local Processing Only:** all video parsing, trimming and downloading is executed strictly on your own browser and computer (by the Tool, running locally). No media content, source URLs or video data is ever transmitted to, or stored on, our servers; we do not operate such a server.
+>
+> **Zero User Tracking:** we **do not collect and do not sell** your browsing history.
 
 ## 1. What we do NOT collect
 
@@ -16,6 +20,8 @@ This policy explains how **Video Lasso** ("the Tool") and its official website h
 - Your card or other payment details (handled by Lemon Squeezy; we never receive them).
 
 The Tool contains no statistics, analytics, advertising or crash-reporting service.
+
+**Scope of data collection:** the Tool collects no user data. The only exception is Pro licence verification: when you activate a licence key, the key and a device name are sent directly to Lemon Squeezy for verification (see Section 3). There are no crash reports, telemetry or usage statistics. We never sell, rent or exchange your data with anyone.
 
 ## 2. Data stored in your own browser
 
@@ -94,7 +100,7 @@ We may change this policy as features or regulations change. Changes will be pos
 
 ## 12. Governing law
 
-This policy is governed by the laws of the Republic of China (Taiwan); disputes are handled as set out in Section 14 of the [Terms of Service](terms.html).
+This policy is governed by the laws of the Republic of China (Taiwan); disputes are handled as set out in Section 16 of the [Terms of Service](terms.html).
 
 ## 13. Contact
 
