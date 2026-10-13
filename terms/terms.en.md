@@ -18,15 +18,13 @@ Welcome to **Video Lasso** ("the Tool"). The Tool is a browser extension develop
 | Item | Free | Pro |
 | --- | --- | --- |
 | Detect page videos, extract subtitles | Included | Included |
-| Download quality | Up to 480p | Unlimited |
+| Download quality | Up to 480p (any site) | Unlimited |
 | Premium download credits | 2 on first use, then 1 every 2 hours (no stacking) (needed for above 480p, MOV, M4A) | Unlimited |
 | Stream download (live) | Uses a premium download credit | Unlimited |
-| Big platforms (YouTube, Bilibili, Twitch, Douyin, Facebook…) | Premium download credits only | Unlimited |
-| Output formats | MP4 | MP4, MOV, M4A (audio only), original WebM, etc. |
 | Simultaneous downloads | 1 at a time | Unlimited |
-| Download speed | Videos up to 10 minutes: not throttled. Videos over 10 minutes: capped at 256 KB/s | Not throttled |
-| Clipping | 3 per day | Unlimited |
-| Tab recording | 8 per day | Unlimited |
+| Download speed | Up to 128 KB/s | Not throttled |
+| Clipping | 3 per day, up to 20 seconds each | Unlimited, any length |
+| Tab recording | 8 per day, up to 3 minutes each | Unlimited, no time limit |
 
 1. The table reflects these Terms at the time of writing. Features and limits may change with updates; the description in the extension and on the official website at the time prevails.
 2. The free daily counts follow your local date and may be synchronised between your own devices through your browser account's sync (see the Privacy Policy).
@@ -73,6 +71,7 @@ Welcome to **Video Lasso** ("the Tool"). The Tool is a browser extension develop
 3. Downloading, storing, distributing or publicly transmitting someone else's copyrighted content may lead to civil or criminal liability. **Any legal liability or damage caused by or arising from your use of the Tool is yours alone; the Developer accepts no legal liability or compensation.**
 4. Prohibited conduct includes: sharing, publicly posting, reselling or renting out licence keys, or letting anyone but the buyer use them; circumventing the Tool's verification; using the Tool to infringe others' rights, commit fraud, disrupt online services or break the law; and cracking, re-posting or distributing DRM-protected content.
 5. If we find unusual use of a licence key (for example mass sharing, resale, or frequent device switching in a short time), we may **suspend the key first** and contact the buyer to confirm where appropriate.
+6. **Indemnity**: if a third party (including a copyright holder or a platform) makes a claim, demand or brings proceedings against the Developer because you breached these Terms or the law, or because of how you download, use or distribute content, you agree to indemnify and hold the Developer harmless from the resulting loss, liability and costs (including reasonable legal fees), except where mandatory law provides otherwise.
 
 ## 9. Unsupported platforms and DRM statement
 
@@ -116,7 +115,7 @@ We may change these Terms as features, operations or regulations change. Changes
 ## 16. Governing law and jurisdiction
 
 1. These Terms are governed by the laws of the **Republic of China (Taiwan)**, including the Civil Code, the Consumer Protection Act, the Personal Data Protection Act and the Copyright Act.
-2. The parties will first try to settle any dispute in good faith. Failing that, the **Taiwan Taipei District Court** is the court of first instance, unless mandatory law provides otherwise on jurisdiction (for example the Consumer Protection Act's rules on the consumer's place of residence).
+2. The parties will first try to settle any dispute in good faith. Failing that, the **Taiwan Yunlin District Court** is the court of first instance, unless mandatory law provides otherwise on jurisdiction (for example the Consumer Protection Act's rules on the consumer's place of residence).
 
 ## 17. Contact
 

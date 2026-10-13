@@ -45,6 +45,14 @@ document.documentElement.setAttribute('data-theme',t)})()</script>
   article li { margin: 6px 0; }
   article strong { color: var(--text); }
   article a { color: var(--gold-t); }
+  article table { width: 100%; border-collapse: separate; border-spacing: 0; margin: 14px 0 18px; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; font-size: 14px; }
+  article th, article td { padding: 10px 14px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line); color: var(--text2); line-height: 1.55; }
+  article th:last-child, article td:last-child { border-right: 0; }
+  article tr:last-child td { border-bottom: 0; }
+  article th { background: rgba(127,127,127,.12); color: var(--text); font-weight: 800; white-space: nowrap; }
+  article td:first-child { color: var(--text); font-weight: 600; }
+  article tbody tr:nth-child(even) td { background: rgba(127,127,127,.05); }
+  @media (max-width: 640px) { article table { display: block; overflow-x: auto; } }
   .back { display: inline-flex; gap: 6px; color: var(--sub); text-decoration: none; font-weight: 700; font-size: 14px; margin-top: 6px; }
   .back:hover { color: var(--text); }
   footer a { color: var(--sub); text-decoration: none; } footer a:hover { color: var(--gold-t); }
